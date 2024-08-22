@@ -1,17 +1,47 @@
 
-/* Test */ 
-
-
-h3 {
-    color : red;
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
 
+.navbar{
+    background-color: #0b001a ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
 
+.navbar ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    color: #fff;
+    padding: 12px;
+}
+
+
+.navbar ul li a:hover{
+    background-color: #fff;
+    color:#0b001a;
+    border-radius: 5% ;
+
+}
+
+
+h1 a{
+    color: #fff;
+    padding-left: 20px;
+}
 
 
 
@@ -33,6 +63,7 @@ a {
     top: 0;
     left: 0;
     background: #0b001a;
+    z-index: -1; /* Assure que le background soit bien à l'arrière-plan */
     overflow: hidden;
 }
 
@@ -142,3 +173,4 @@ a {
 
 
 /* --------------------------------------------------             End  Background Part */
+
