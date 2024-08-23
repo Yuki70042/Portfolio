@@ -141,7 +141,7 @@ h1 a{
     height: 60vh;
     border-radius: 60%;
     border-style: double;
-    border-color: #380f44;
+    border-color: #750f33;
     border-width: 8px;
 }
 
@@ -168,8 +168,32 @@ h1 a{
     width: 100%; /* Révèle le soulignement au survol */
     
 }
- /* ------------------- End Portrait Part */
 
+
+/* ------------------- End Portrait Part + Hero-section */
+
+
+/* --------------------------------------------------------- */
+
+
+/* ---------------------------------        About Me Section */
+
+.AboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20vh;
+    border: solid, 3px, #fff;
+}
+
+.AboutMe-content h2{
+    color:#fff;
+}
+
+
+.timeline{
+    color: #fff;
+}
 
 
 
