@@ -7,6 +7,7 @@
         <meta name ="Page Portfolio">
         <meta charset ="utf-8">
         <link href="style.css" rel="stylesheet" >
+        
 
 
     </head>
@@ -49,15 +50,26 @@
         <div class="AboutMe">
 
             <div class="AboutMe-content"> 
+
                 <h2> About me </h2>
+                <p id="about-text"> <!-- Texte changeant en fonction du point de la frise--> </p>
+
             </div>
 
             <div class="timeline">
-                    <div class="timeline-point" id="point1"> Enfance </div>
-                    <div class="timeline-point" id="point3"> Lycée </div>
-                    <div class="timeline-point" id="point4"> BTS SIO </div>
-                    <div class="timeline-point" id="point5"> Aujourd'hui </div>
+                <div class="timeline-cursor" id="timeline-cursor"></div> <!-- Curseur -->
+                <div class="timeline-point active" id="point1" data-point="Enfance" onclick="showInfo('Enfance')"> Enfance </div>
+                <div class="timeline-point" id="point3" data-point="Lycee" onclick="showInfo('Lycee')"> Lycée </div>
+                <div class="timeline-point" id="point4" data-point="BTS" onclick="showInfo('BTS')"> BTS SIO </div>
+                <div class="timeline-point" id="point5" data-point="Aujourdhui" onclick="showInfo('Aujourdhui')"> Aujourd'hui </div>
             </div>
+
+            <script src="script.js"></script>
+            <script>
+                window.onload = function() {
+                    showInfo('Enfance');
+                };
+            </script>
 
         </div>
 
