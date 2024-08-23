@@ -27,7 +27,7 @@
     background-color: #0b001a;
 }
 
-.navbar::after{
+.navbar::after{ /* Ajoute un trait fin rosé en bas de ma page*/
     content:"";
     position: absolute;
     bottom: 0;
@@ -72,25 +72,27 @@ h1 a{
 .hero-section{
     display: flex;
     align-items: center;
-    margin: 6vh;
+    white-space: nowrap;
+    margin: 3vh;
     height: 100%;
 }
 
 
-
 .hero-section section h3 {
-    font-size: 5vh; 
+    font-size: 10vh; 
     line-height: 1.4; 
     height: 100%;
     padding: 2vh;
+    padding-left: 4vh;
     font-family: 'Balance', Arial, Helvetica, sans-serif;
     letter-spacing: 0.4vh;
     
     color: #fff;
-    background: #0e0120;
-    border-radius: 1%;
+
+    /*border-radius: 3%;
     border-style: solid;
-    border-color: #750f33;
+    border-width: 1vh;
+    border-color: #750f33;*/
 }
 
 .welcome {
@@ -107,9 +109,9 @@ h1 a{
 
 .start-button {
     margin-top: 20px;
-    padding: 1.1vh 3vh; 
+    padding: 1.5vh 3vh; 
     margin-left: 53%;
-    font-size: 2.5vh; 
+    font-size: 3.5vh; 
     font-family: 'Balance', Arial, Helvetica, sans-serif; 
     color: #fff; 
     background-color: #750f33;
@@ -130,12 +132,13 @@ h1 a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 3vh;
     width: 45%;
 
 }
 
 .hero-section .me img{
-    height: 62vh;
+    height: 60vh;
     border-radius: 60%;
     border-style: double;
     border-color: #380f44;
@@ -163,6 +166,7 @@ h1 a{
 
 .hero-section .me a:hover::after {
     width: 100%; /* Révèle le soulignement au survol */
+    
 }
  /* ------------------- End Portrait Part */
 
