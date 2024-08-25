@@ -48,7 +48,7 @@
 .navbar ul li a{
     color: #fff;
     font-size: 2.3vh;
-    padding: 12px;
+    padding: 2vh;
     text-decoration: none;
 }
 
@@ -181,15 +181,15 @@ h1 a{
     margin-right: 20vh;
     padding: 5vh;
     width: 80%;
-    background-color: #0b001a;
+    background-color: #15042d;
     border-radius: 12%;
 }
 
 .AboutMe-content {
     width: 70%;
     padding: 20px;
-    background-color: #1b0a32;
-    border-radius: 2%;
+    background-color: #2d164a;
+    border-radius: 1%;
 }
 
 
@@ -267,8 +267,8 @@ h1 a{
 
 .background {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     background: #0b001a;
@@ -277,17 +277,14 @@ h1 a{
 }
 
 .background span {
-    width: 28vmin;
-    height: 28vmin;
-    border-radius: 28vmin;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
     backface-visibility: hidden;
     position: absolute;
-    animation: move;
-    animation-duration: 30;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: move infinite linear;
+    animation-duration: 30s;
 }
-
 
 .background span:nth-child(0) {
     color: #26114b;
@@ -295,8 +292,8 @@ h1 a{
     left: 8%;
     animation-duration: 107s;
     animation-delay: -21s;
-    transform-origin: -3vw -18vh;
-    box-shadow: -56vmin 0 7.7057081441415605vmin currentColor;
+    transform-origin: -10vw -20vh;
+    box-shadow: -56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(1) {
     color: #26114b;
@@ -305,7 +302,7 @@ h1 a{
     animation-duration: 165s;
     animation-delay: -17s;
     transform-origin: 5vw 24vh;
-    box-shadow: 56vmin 0 7.477060807131056vmin currentColor;
+    box-shadow: 56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(2) {
     color: #26114b;
@@ -314,7 +311,7 @@ h1 a{
     animation-duration: 54s;
     animation-delay: -139s;
     transform-origin: 25vw -1vh;
-    box-shadow: -56vmin 0 7.531324870837221vmin currentColor;
+    box-shadow: -56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(3) {
     color: #26114b;
@@ -323,7 +320,7 @@ h1 a{
     animation-duration: 58s;
     animation-delay: -165s;
     transform-origin: -3vw 13vh;
-    box-shadow: -56vmin 0 7.005887708223712vmin currentColor;
+    box-shadow: -56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(4) {
     color: #760f2e;
@@ -332,7 +329,7 @@ h1 a{
     animation-duration: 94s;
     animation-delay: -132s;
     transform-origin: 5vw 15vh;
-    box-shadow: 56vmin 0 7.165476141040068vmin currentColor;
+    box-shadow: 56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(5) {
     color: #760f2e;
@@ -341,7 +338,7 @@ h1 a{
     animation-duration: 70s;
     animation-delay: -176s;
     transform-origin: -18vw -20vh;
-    box-shadow: 56vmin 0 7.370025085586983vmin currentColor;
+    box-shadow: 56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(6) {
     color: #760f2e;
@@ -350,7 +347,7 @@ h1 a{
     animation-duration: 194s;
     animation-delay: -58s;
     transform-origin: -10vw 6vh;
-    box-shadow: -56vmin 0 7.8264468940230385vmin currentColor;
+    box-shadow: -56vmin 0 8vmin currentColor;
 }
 .background span:nth-child(7) {
     color: #760f2e;
@@ -359,7 +356,7 @@ h1 a{
     animation-duration: 86s;
     animation-delay: -149s;
     transform-origin: 8vw -20vh;
-    box-shadow: -56vmin 0 7.173828197902693vmin currentColor;
+    box-shadow: -56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(8) {
     color: #760f2e;
@@ -368,7 +365,7 @@ h1 a{
     animation-duration: 190s;
     animation-delay: -44s;
     transform-origin: -14vw 3vh;
-    box-shadow: -56vmin 0 7.366034496191548vmin currentColor;
+    box-shadow: -56vmin 0 7vmin currentColor;
 }
 .background span:nth-child(9) {
     color: #26114b;
@@ -377,9 +374,54 @@ h1 a{
     animation-duration: 66s;
     animation-delay: -192s;
     transform-origin: -21vw -6vh;
-    box-shadow: 56vmin 0 7.745490426164688vmin currentColor;
+    box-shadow: 56vmin 0 8vmin currentColor;
 }
+
 
 
 /* --------------------------------------------------             End  Background Part */
 
+
+
+/* -----------------------------------------     Responsive Part
+
+/* Pour les tablettes */
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .start-button {
+        font-size: 2.5vh;
+        margin-left: 0;
+    }
+
+    .me img {
+        height: 40vh;
+        margin: 0 auto;
+    }
+}
+
+/* Pour les smartphones */
+@media only screen and (max-width: 480px) {
+    .navbar h1 {
+        font-size: 3vh;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .AboutMe {
+        flex-direction: column;
+        margin: 5vh 2vh;
+    }
+
+    .timeline {
+        width: 100%;
+    }
+
+    .timeline-point {
+        font-size: 2vh;
+    }
+}
