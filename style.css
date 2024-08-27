@@ -71,10 +71,24 @@ h1 a{
 
 .hero-section{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     white-space: nowrap;
     margin: 3vh;
     height: 100%;
+}
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 7vh;
+    margin-left: 5vh;
+    height: 100%; 
+
 }
 
 
@@ -89,17 +103,6 @@ h1 a{
     color: #fff;
 }
 
-.welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 55%;
-    padding: 7vh;
-    margin-left: 5vh;
-    height: 100%; 
-
-}
 
 .start-button {
     margin-top: 20px;
@@ -385,43 +388,44 @@ h1 a{
 
 /* -----------------------------------------     Responsive Part
 
-/* Pour les tablettes */
-@media only screen and (max-width: 768px) {
+/* Pour les smartphones */
+@media only screen and (max-width: 480px) {
     .hero-section {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh; /* Assure que la section prend toute la hauteur de l'écran */
+        padding: 0;
+    }
+
+    .welcome {
+        width: 100%;
+        padding: 5vh 2vh; /* Ajuste le padding pour les petits écrans */
+    }
+
+    .welcome h3 {
+        font-size: 6vh; /* Réduit la taille du texte pour les petits écrans */
+        line-height: 1.2; /* Ajuste l'espacement des lignes */
+        margin-bottom: 2vh; /* Ajoute un peu d'espace en bas */
     }
 
     .start-button {
-        font-size: 2.5vh;
-        margin-left: 0;
+        padding: 1.5vh 3vh; /* Ajuste le padding du bouton */
+        font-size: 3vh; /* Réduit la taille du texte du bouton */
+        margin-top: 2vh; /* Ajoute un peu d'espace au-dessus du bouton */
+    }
+
+    .me {
+        width: 100%; /* Assure que la section portrait prend toute la largeur */
+        padding: 0; /* Supprime le padding */
+        margin-top: 2vh; /* Ajoute un espace au-dessus de la section portrait */
     }
 
     .me img {
-        height: 40vh;
-        margin: 0 auto;
-    }
-}
-
-/* Pour les smartphones */
-@media only screen and (max-width: 480px) {
-    .navbar h1 {
-        font-size: 3vh;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-    }
-
-    .AboutMe {
-        flex-direction: column;
-        margin: 5vh 2vh;
-    }
-
-    .timeline {
-        width: 100%;
-    }
-
-    .timeline-point {
-        font-size: 2vh;
+        height: 40vh; /* Ajuste la hauteur de l'image pour les petits écrans */
+        width: auto; /* Assure que l'image garde ses proportions */
+        margin-top: 2vh; /* Ajoute un espace au-dessus de l'image */
     }
 }
