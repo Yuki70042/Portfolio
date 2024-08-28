@@ -182,22 +182,26 @@ h1 a{
     margin-top: 30vh;
     margin-left: 20vh;
     margin-right: 20vh;
-    padding: 5vh;
+    padding: 4vh;
     width: 80%;
-    border-radius: 12%;
+
+    border-top: dotted;
+    border-bottom: dotted;
+    border-width: 1vh;
+    border-color: #421414;
 }
 
 .AboutMe-content {
     width: 70%;
     padding: 20px;
-    background-color: #311b4b;
     border-radius: 1%;
 }
 
 
 
 .AboutMe-content h2 {
-    font-size: 5vh;
+    font-size: 8vh;
+    text-align: center;
     color: #fff;
     font-family: 'Balance', Arial, Helvetica, sans-serif;
     letter-spacing: 0.6vh;
@@ -210,6 +214,8 @@ h1 a{
     line-height: 1.6;
     letter-spacing: 1px;
     font-family: 'Balance', Arial, Helvetica, sans-serif;
+    background-color: #311b4b;
+    padding: 20px;
 }
 
 .timeline {
