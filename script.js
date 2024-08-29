@@ -32,3 +32,8 @@ function showInfo(point) {
     let topOffset = clickedElement.offsetTop + (clickedElement.offsetHeight / 2) - (cursor.offsetHeight / 2);
     cursor.style.top = topOffset + "px";
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("year").textContent = new Date().getFullYear(); 
+});

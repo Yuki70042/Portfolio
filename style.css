@@ -1,3 +1,4 @@
+/* Police d'écriture */
 @font-face {
     font-family: 'Balance';
     src: url('Fonts/Balance.otf') format('opentype');
@@ -20,7 +21,7 @@
 }
 
 
-*{
+*{ /* On initialize la page avec des valeurs par défaut*/
     margin:0px; 
     padding:0px;
     box-sizing: border-box;
@@ -417,16 +418,42 @@ h1 a{
 
 .bloc-media{
     display: flex;
-    text-decoration: none;
+    justify-content: center;
+    width: 100%;
 }
+
+.bloc-media ul{
+    display: flex;
+    height: 6vh;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bloc-media ul li a {
+    color: #fff;
+    font-size: 2.8vh;
+    margin: 5vh;
+
+}
+
+
+/* Test
+.bloc-menu::before{
+    content:"";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 2px;
+    background-color: #750f33;
+} */
 
 .bloc-menu{
     display: flex;
     justify-content: center;
     width: 100%;
-    border: solid;
-    border-color: #fff;
 }
+
 .bloc-menu ul{
     display: flex;
     height: 6vh;
@@ -437,10 +464,11 @@ h1 a{
 
 .bloc-menu ul li a{
     color: #fff;
-    font-size: 3vh;
+    font-size: 2.8vh;
     padding: 4vh;
-    text-decoration: none;
+    text-decoration: underline;
 }
+
 
 
 
