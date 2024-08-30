@@ -41,44 +41,43 @@
     background-color: #0b001a;
 }
 
-.navbar::after{ /* Ajoute un trait fin rosé en bas de ma page*/
-    content:"";
+.navbar::after{ 
     position: absolute;
+    content:"";
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 78%;
     height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #750f33;
 }
 
 .navbar ul{
     display: flex;
-    height: 5vh;
     align-items: center;
+    height: 5vh;
     list-style-type: none;
 }
 
 .navbar ul li a{
-    color: #fff;
-    font-size: 2.3vh;
     padding: 2vh;
+    font-size: 2.3vh;
     text-decoration: none;
+    color: #fff;
 }
 
-
 .navbar ul li a:hover{
-    background-color: #750f33;
     border-radius: 5% ;
-
+    background-color: #750f33;
 }
 
 h1 a{
-    color: #fff;
     padding-left: 6vh;
     font-size: 4vh;
     text-decoration: none;
+    color: #fff;
 }
+
 /* ----------------------------------------------------------------------------------------  End of Header */
 
 /* ---------------------------------------------------------------------------------------- Hero-section */
@@ -86,59 +85,54 @@ h1 a{
 .hero-section{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     white-space: nowrap;
+    align-items: center;
     margin: 7vh;
-    margin-bottom: 20vh;
     height: 100%;
 }
-
 
 .welcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    padding: 7vh;
     margin-left: 5vh;
+    padding: 7vh;
     height: 100%; 
-
+    width: 50%;
 }
 
 .hero-section section h3 {
-    font-size: 10vh; 
-    line-height: 1.4; 
     height: 100%;
+    line-height: 1.4; 
     padding: 2vh;
     padding-left: 4vh;
-    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    font-size: 10vh; 
     letter-spacing: 0.4vh;  
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
     color: #fff;
 }
 
-
 .start-button {
     margin-top: 20px;
-    padding: 1.5vh 3vh; 
     margin-left: 53%;
-    font-size: 3.5vh; 
-    font-family: 'Balance', Arial, Helvetica, sans-serif; 
-    color: #fff; 
-    background-color: #750f33;
-    border: none;
+    padding: 1.5vh 3vh; 
     border-radius: 25px;
+    text-decoration: none;
     cursor: pointer; 
     transition: background-color 0.3s ease; 
-    text-decoration: none;
+    font-size: 3.5vh; 
+    font-family: 'Balance', Arial, Helvetica, sans-serif; 
+    background-color: #750f33;
+    color: #fff; 
 }
 
 .start-button:hover {
     background-color: #a01745; 
 }
 
-
  /* ------------------- Portrait Part */
+
 .hero-section .me{
     display: flex;
     flex-direction: column;
@@ -146,23 +140,22 @@ h1 a{
     justify-content: center;
     padding-top: 3vh;
     width: 45%;
-
 }
 
 .hero-section .me img{
     height: 60vh;
-    border-radius: 60%;
-    border-style: double;
-    border-color: #750f33;
     border-width: 8px;
+    border-style: double;
+    border-radius: 60%;
+    border-color: #750f33;
 }
 
 .hero-section .me a {
     position: relative; 
-    color: #fff; 
+    padding: 4px 0; 
     text-decoration: none; 
     font-size: 3.5vh; 
-    padding: 4px 0; 
+    color: #fff; 
 }
 
 .hero-section .me a::after {
@@ -172,19 +165,16 @@ h1 a{
     bottom: 0;
     width: 0; 
     height: 2px; 
-    background-color: #750f33; 
     transition: width 0.3s ease; 
+    background-color: #750f33; 
 }
 
 .hero-section .me a:hover::after {
-    width: 100%; /* Révèle le soulignement au survol */
-    
+    width: 100%; 
 }
 
 
 /* ----------------------------------------------------------------------------------------  End  Hero-section */
-
-
 
 
 /* ----------------------------------------------------------------------------------       About Me Section */
@@ -196,7 +186,6 @@ h1 a{
     margin: 45vh 20vh 10vh 20vh;
     padding: 3vh 4vh 4vh 4vh;
     width: 80%;
-
     border-top: dashed;
     border-bottom: dashed;
     border-width: 0.5vh;
@@ -208,75 +197,72 @@ h1 a{
     border-radius: 1%;
 }
 
-
 .AboutMe-content h2 {
-    font-size: 7vh;
+    font-size: 7vh;   
     text-align: center;
-    color: #fff;
     font-family: 'Balance', Arial, Helvetica, sans-serif;
     letter-spacing: 0.6vh;
-    margin-bottom: 1.5vh;
+    color: #fff;
 }
 
 .AboutMe-content p {
-    font-size: 3vh;
+    padding: 25px;
+    border-radius: 2%;
     text-align: justify;
-    color: #fff;
     line-height: 1.6;
     letter-spacing: 0.8px;
+    font-size: 3vh;
     font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
     background-color: #311b4b;
-    border-radius: 2%;
-    padding: 25px;
+    color: #fff;
 }
 
 .timeline {
-    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    border-left: 6px solid #85163d;
-    padding-left: 20px;
-    padding-top: 50px;
+    padding: 50px 0px 0px 20px;
     margin-top: 4%;
+    width: 25%;
+    border-left: 6px solid #85163d;
 }
 
 
 .timeline-point {
+    z-index: 1;
     position: relative;
     padding: 15px 30px;
     margin: 6vh 0;
-    background-color: #301d52;
-    color: #fff;
+    border-radius: 5px;
     font-size: 2.5vh;
     text-align: center;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    z-index: 1;
+    background-color: #301d52;
+    color: #fff;
 }
 
 .timeline-point:hover {
-    background-color: #750f33;
     transform: scale(1.1);
+    background-color: #750f33;
 }
-
 
 .timeline-point.active {
     background-color: #620a27;
 }
 
 .timeline-cursor {
+    z-index: 2;
     position: absolute;
     width: 4vh;
     height: 4vh;
-    background-color: #614077;
+    left: -3px; 
     border-radius: 50%;
-    left: -3px; /* Alignement sur la barre verticale */
-    transform: translateX(-50%); /* Centre le curseur par rapport à lui-même */
+    transform: translateX(-50%); 
     transition: top 0.5s ease;
-    z-index: 2;
+    background-color: #614077;
+
 }
 /* --------------------------------------------------------------------------------------- End About Me Part
 
@@ -410,36 +396,36 @@ h1 a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2%;
-    color: #fff;
-    background-color:#0b001a;
     position: relative;
+    padding-bottom: 2%;
+    background-color:#0b001a;
+    color: #fff;
 }
 
 .footer-content::before{
     content:"";
     position: absolute;
+    width: 70%;
+    height: 2.5px;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    width: 70%;
-    height: 2.5px;
     background-color: #750f33;
 }
 
 .bloc-media{
     display: flex;
-    width: 100%;
-    padding-top: 5vh;
     justify-content: center;
+    padding-top: 5vh;
+    width: 100%;
 }
 
 .bloc-media ul{
     display: flex;
     justify-content: space-around;
-    width: 30%;
     list-style-type: none;
     padding: 0;
+    width: 30%;
 }
 
 .bloc-media ul li{
@@ -452,9 +438,9 @@ h1 a{
     justify-content: center;
     width: 60px; 
     height: 60px; 
-    background-color: #2e1228; 
     border-radius: 50%; 
     transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #2e1228; 
 }
 
 .bloc-media ul li a img {
@@ -464,8 +450,8 @@ h1 a{
 }
 
 .bloc-media ul li a:hover {
-    background-color: #750f33; 
     transform: scale(1.1); 
+    background-color: #750f33; 
 }
 
 .bloc-media ul li a:hover img {
@@ -475,8 +461,8 @@ h1 a{
 .bloc-menu{
     display: flex;
     justify-content: center;
-    width: 100%;
     margin-top: 3%;
+    width: 100%;
 }
 
 .bloc-menu ul{
@@ -491,12 +477,12 @@ h1 a{
 }
 
 .bloc-menu ul li a{
-    color: #fff;
-    font-size: 3vh;
-    text-decoration: none;
     position: relative;
     padding: 10px;
+    text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 3vh;
+    color: #fff;
 }
 
 .bloc-menu ul li a::before {
@@ -507,9 +493,9 @@ h1 a{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #750f33;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+    background-color: #750f33;
 }
 
 .bloc-menu ul li a:hover::before {
@@ -521,50 +507,10 @@ h1 a{
     color: #750f33;
 }
 
-.bloc
-
+.bloc-copyright{
+    margin-top: 4vh;
+}
 
 
 /* ----------------------------------------------------------------------------------------    Responsive Part
 
-/* Pour les smartphones */
-@media only screen and (max-width: 480px) {
-    .hero-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 100vh; /* Assure que la section prend toute la hauteur de l'écran */
-        padding: 0;
-    }
-
-    .welcome {
-        width: 100%;
-        padding: 5vh 2vh; /* Ajuste le padding pour les petits écrans */
-    }
-
-    .welcome h3 {
-        font-size: 6vh; /* Réduit la taille du texte pour les petits écrans */
-        line-height: 1.2; /* Ajuste l'espacement des lignes */
-        margin-bottom: 2vh; /* Ajoute un peu d'espace en bas */
-    }
-
-    .start-button {
-        padding: 1.5vh 3vh; /* Ajuste le padding du bouton */
-        font-size: 3vh; /* Réduit la taille du texte du bouton */
-        margin-top: 2vh; /* Ajoute un peu d'espace au-dessus du bouton */
-    }
-
-    .me {
-        width: 100%; /* Assure que la section portrait prend toute la largeur */
-        padding: 0; /* Supprime le padding */
-        margin-top: 2vh; /* Ajoute un espace au-dessus de la section portrait */
-    }
-
-    .me img {
-        height: 40vh; /* Ajuste la hauteur de l'image pour les petits écrans */
-        width: auto; /* Assure que l'image garde ses proportions */
-        margin-top: 2vh; /* Ajoute un espace au-dessus de l'image */
-    }
-}
