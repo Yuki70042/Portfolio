@@ -397,9 +397,9 @@ h1 a{
     align-items: center;
     position: relative;
     padding-bottom: 2%;
+    text-align: center;
     background-color:#0b001a;
     color: #fff;
-    text-align: center; /* Centrer le texte pour les petits écrans */
 }
 
 .footer-content::before {
@@ -467,10 +467,11 @@ h1 a{
 
 .bloc-menu ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     padding: 0;
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+
 }
 
 .bloc-menu ul li {
@@ -514,6 +515,8 @@ h1 a{
 
 
 /* ----------------------------------------------------------------------------------------    Responsive Part */
+
+/* ------------ Format Tablette  -------------- */
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
@@ -556,8 +559,50 @@ h1 a{
         font-size: 3vh;
     }
 
+    .AboutMe {
+        flex-direction: column;
+        align-items: center;
+        margin: 20vh 5vh 5vh 5vh;
+        padding: 3vh 2vh;
+        width: 90%;
+    }
+
+    .AboutMe-content {
+        width: 100%;
+    }
+
+    .AboutMe-content h2 {
+        font-size: 5vh;   
+    }
+
+    .AboutMe-content p {
+        font-size: 2.5vh;
+        padding: 20px;
+    }
+
+    .timeline {
+        width: 100%;
+        margin-top: 5vh;
+        border-left: none;
+        border-top: 6px solid #85163d;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .timeline-point {
+        font-size: 2.5vh;
+        margin: 4vh 0;
+        padding: 10px 20px;
+        width: 80%; /* Réduit la largeur des points */
+    }
+
+    .timeline-cursor {
+        width: 3vh;
+        height: 3vh;
+    }
+
     .bloc-media ul {
-        width: 50%; /* Ajuste la largeur pour les écrans de taille moyenne */
+        width: 50%; 
     }
 
     .bloc-menu ul {
@@ -566,20 +611,23 @@ h1 a{
     }
 
     .bloc-menu ul li {
-        margin: 10px 0; /* Ajoute de l'espace vertical entre les éléments */
+        margin: 10px 0; 
     }
 
     .bloc-menu ul li a {
-        font-size: 2.5vh; /* Réduit la taille de la police pour s'adapter aux petits écrans */
+        font-size: 2.5vh;
     }
 
     .bloc-copyright {
         margin-top: 2vh;
-        font-size: 2vh; /* Ajuste la taille de la police */
+        font-size: 2vh; 
     }
 }
 
-/* Styles pour les téléphones */
+
+
+/* ----------- Format Téléphone -------------- */
+
 @media (max-width: 480px) {
     .hero-section section h3 {
         font-size: 5vh;
@@ -600,15 +648,49 @@ h1 a{
         font-size: 2.5vh;
     }
 
+    .AboutMe {
+        margin: 15vh 2vh 2vh 2vh;
+        padding: 2vh 1vh;
+    }
+
+    .AboutMe-content h2 {
+        font-size: 4.5vh;   
+    }
+
+    .AboutMe-content p {
+        font-size: 2vh;
+        padding: 15px;
+    }
+
+    .timeline {
+        width: 100%;
+        margin-top: 5vh;
+        border-left: none;
+        border-top: 5px solid #85163d;
+        padding-top: 15px;
+    }
+
+    .timeline-point {
+        font-size: 2vh;
+        margin: 3vh 0;
+        padding: 8px 15px;
+        width: 90%; 
+    }
+
+    .timeline-cursor {
+        width: 2.5vh;
+        height: 2.5vh;
+    }
+
     .bloc-media ul {
-        width: 70%; /* Réduit davantage la largeur pour les petits écrans */
+        width: 70%; 
     }
 
     .bloc-menu ul li a {
-        font-size: 2vh; /* Encore une fois, réduction pour les très petits écrans */
+        font-size: 2vh; 
     }
 
     .bloc-menu ul li {
-        margin: 8px 0; /* Ajuste l'espace entre les éléments */
+        margin: 8px 0; 
     }
 }
