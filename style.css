@@ -391,8 +391,7 @@ h1 a{
 /* ----------------------------------------------------------------------------------------    End  Background Part */
 
 /* ----------------------------------------------------------------------------------------  Footer Part */
-
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,9 +399,10 @@ h1 a{
     padding-bottom: 2%;
     background-color:#0b001a;
     color: #fff;
+    text-align: center; /* Centrer le texte pour les petits écrans */
 }
 
-.footer-content::before{
+.footer-content::before {
     content:"";
     position: absolute;
     width: 70%;
@@ -413,14 +413,14 @@ h1 a{
     background-color: #750f33;
 }
 
-.bloc-media{
+.bloc-media {
     display: flex;
     justify-content: center;
     padding-top: 5vh;
     width: 100%;
 }
 
-.bloc-media ul{
+.bloc-media ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -428,7 +428,7 @@ h1 a{
     width: 30%;
 }
 
-.bloc-media ul li{
+.bloc-media ul li {
     margin: 0 10px;
 }
 
@@ -458,25 +458,26 @@ h1 a{
     opacity: 0.8; 
 }
 
-.bloc-menu{
+.bloc-menu {
     display: flex;
     justify-content: center;
     margin-top: 3%;
     width: 100%;
 }
 
-.bloc-menu ul{
+.bloc-menu ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 0;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
 }
 
-.bloc-menu ul li{
+.bloc-menu ul li {
     margin: 0 15px;
 }
 
-.bloc-menu ul li a{
+.bloc-menu ul li a {
     position: relative;
     padding: 10px;
     text-decoration: none;
@@ -507,10 +508,107 @@ h1 a{
     color: #750f33;
 }
 
-.bloc-copyright{
+.bloc-copyright {
     margin-top: 4vh;
 }
 
 
-/* ----------------------------------------------------------------------------------------    Responsive Part
+/* ----------------------------------------------------------------------------------------    Responsive Part */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 2vh 0;
+    }
 
+    .welcome {
+        width: 100%;
+        margin: 0;
+        padding: 5vh 2vh;
+    }
+
+    .hero-section section h3 {
+        font-size: 6vh;
+        padding: 1vh 2vh;
+        text-align: center;
+        overflow-wrap: break-word; 
+        margin: 0 2vh; 
+    }
+
+    .start-button {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 3vh;
+        padding: 1vh 2vh;
+    }
+
+    .hero-section .me {
+        width: 100%;
+        padding: 2vh 0;
+    }
+
+    .hero-section .me img {
+        height: 40vh;
+        border-width: 5px;
+    }
+
+    .hero-section .me a {
+        font-size: 3vh;
+    }
+
+    .bloc-media ul {
+        width: 50%; /* Ajuste la largeur pour les écrans de taille moyenne */
+    }
+
+    .bloc-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloc-menu ul li {
+        margin: 10px 0; /* Ajoute de l'espace vertical entre les éléments */
+    }
+
+    .bloc-menu ul li a {
+        font-size: 2.5vh; /* Réduit la taille de la police pour s'adapter aux petits écrans */
+    }
+
+    .bloc-copyright {
+        margin-top: 2vh;
+        font-size: 2vh; /* Ajuste la taille de la police */
+    }
+}
+
+/* Styles pour les téléphones */
+@media (max-width: 480px) {
+    .hero-section section h3 {
+        font-size: 5vh;
+        padding: 1vh;
+        margin: 0 1vh; 
+    }
+
+    .start-button {
+        font-size: 2.5vh;
+        padding: 1vh 1.5vh;
+    }
+
+    .hero-section .me img {
+        height: 30vh;
+    }
+
+    .hero-section .me a {
+        font-size: 2.5vh;
+    }
+
+    .bloc-media ul {
+        width: 70%; /* Réduit davantage la largeur pour les petits écrans */
+    }
+
+    .bloc-menu ul li a {
+        font-size: 2vh; /* Encore une fois, réduction pour les très petits écrans */
+    }
+
+    .bloc-menu ul li {
+        margin: 8px 0; /* Ajuste l'espace entre les éléments */
+    }
+}
