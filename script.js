@@ -21,7 +21,7 @@ function showInfo(point) {
             aboutText.innerHTML = "Actuellement en deuxième année de BTS Services Informatiques aux Organisations (SIO) avec l'option Solutions Logicielles et Applications Métier (SLAM), j'ai choisi de poursuivre mes études en alternance au Lycée Condorcet. Durant ces deux années, j'ai eu l'opportunité d'être apprentie au sein de la DSI du Grand Belfort.<br><br> J'ai opté pour cette formation en raison de son approche profesionnalisante fortement axée sur des travaux pratiques et des projets de groupes. L'option SLAM qui se concentre sur la conception, le développement et la maintenance de programmes applicatifs orrespondait parfaitement à mes intérêts.<br><br> Ce cursus s'est révélé être une expérience formatrice et enrichissante, où j'ai véritablement développé une passion pour la programmation et la gestion de projets complexes. C'est également durant cette période que j'ai commencé à partager mes réalisations sur GitHub et Instagram, et que je me suis pleinement investie, consacrant une partie de mes soirées à des projets personnels.";
             break;
         case 'Aujourdhui':
-            aboutText.innerHTML = "Je me définis aujourd'hui comme une personne ambitieuse, avec un fort désir de poursuivre mes études jusqu'au niveau master. Mon objectif est d'acquérir une expertise approfondie, notamment grâce à une expérience internationale qui me permettrait d'élargir mes horizons professionnels et personnels.<br><br> Passionnée par l'innovation et le dépassement de soi, j'aime explorer de nouvelles perspectives et relever des défis qui me poussent à évoluer constamment. Je suis ouverte à toutes les opportunités qui me permettent de développer mes compétences et d'apporter une valeur ajoutés dans mes projets. <br><br> Aujourd'hui, je m'épanouis en explorant les multiples facettes du développement informatique pour affiner mes compétences sans me presser de me spécialiser. J'apprends le C# à travers la création d'applications Windows Forms et de petits jeux vidéo avec Unity. Toujours curieuse, j'ai plusieurs projets en tête, comme l'idée de créer plusieurs petits jeux ou encore une application mobile pour organiser des jeux de rôle.";
+            aboutText.innerHTML = "Je me définis aujourd'hui comme une personne ambitieuse, avec un fort désir de poursuivre mes études jusqu'au niveau master. Mon objectif est d'acquérir une expertise approfondie, notamment grâce à une expérience internationale qui me permettrait d'élargir mes horizons professionnels et personnels.<br><br> Passionnée par l'innovation et le dépassement de soi, j'aime explorer de nouvelles perspectives et relever des défis qui me poussent à évoluer constamment. Je suis ouverte à toutes les opportunités qui me permettent de développer mes compétences et d'apporter une valeur ajoutés dans mes projets. <br><br> Aujourd'hui, je m'épanouis en explorant les multiples facettes du développement informatique pour affiner mes compétences sans me presser de me spécialiser. J'apprends le C# à travers la création d'applications Windows Forms et de petits jeux vidéo avec Unity. Toujours curieuse, j'ai plusieurs projets en tête, comme l'idée de créer plusieurs jeux ou encore une application mobile pour organiser des jeux de rôle.";
             break;
         default:
             aboutText.innerHTML = "Cliquez sur un point pour en savoir plus.";
@@ -37,3 +37,14 @@ function showInfo(point) {
 document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("year").textContent = new Date().getFullYear(); 
 });
+
+
+// Ajoute un menu "Burger sur les petits formats"
+document.getElementById('menu-toggle').onclick = function() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+    } else {
+        menu.classList.add('active');
+    }
+};

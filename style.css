@@ -78,6 +78,11 @@ h1 a{
     color: #fff;
 }
 
+/* Menu burger hidden on larger screens */
+.menu-toggle {
+    display: none;
+}
+
 /* ----------------------------------------------------------------------------------------  End of Header */
 
 /* ---------------------------------------------------------------------------------------- Hero-section */
@@ -104,9 +109,9 @@ h1 a{
 
 .hero-section section h3 {
     height: 100%;
+    width: 100%;
     line-height: 1.4; 
     padding: 2vh;
-    padding-left: 4vh;
     font-size: 10vh; 
     letter-spacing: 0.4vh;  
     font-family: 'Balance', Arial, Helvetica, sans-serif;
@@ -518,6 +523,61 @@ h1 a{
 
 /* ------------ Format Tablette  -------------- */
 @media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    h1 a {
+        padding: 1vh;
+        font-size: 3.5vh;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: none;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        height: 100vh;
+        background-color: rgba(26, 15, 43, 0.95);
+        z-index: 100;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        font-size: 2.5vh;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        z-index: 10;
+        display: block;
+        cursor: pointer;
+        font-size: 4vh;
+        color: #fff;
+        position: relative; 
+        margin-right: 20px;
+    }
+    
     .hero-section {
         flex-direction: column;
         align-items: center;
@@ -530,12 +590,8 @@ h1 a{
         padding: 5vh 2vh;
     }
 
-    .hero-section section h3 {
-        font-size: 6vh;
-        padding: 1vh 2vh;
+    .hero-section  h3 {
         text-align: center;
-        overflow-wrap: break-word; 
-        margin: 0 2vh; 
     }
 
     .start-button {
@@ -593,7 +649,7 @@ h1 a{
         font-size: 2.5vh;
         margin: 4vh 0;
         padding: 10px 20px;
-        width: 80%; /* Réduit la largeur des points */
+        width: 80%; 
     }
 
     .timeline-cursor {
@@ -629,6 +685,27 @@ h1 a{
 /* ----------- Format Téléphone -------------- */
 
 @media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    h1 {
+        flex-grow: 1;
+    }
+
+    .menu-toggle {
+        margin-left: auto; 
+    }
+
+    h1 a {
+        font-size: 3vh;
+    }
+
+    .navbar ul li a {
+        font-size: 2vh;
+    }
+
     .hero-section section h3 {
         font-size: 5vh;
         padding: 1vh;
