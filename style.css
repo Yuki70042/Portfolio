@@ -282,7 +282,7 @@ h1 a{
 }
 
 .Projects-section h2{
-    padding-bottom: 3vh;
+    padding-bottom: 4vh;
     font-size: 7vh;   
     text-align: center;
     font-family: 'Balance', Arial, Helvetica, sans-serif;
@@ -293,7 +293,13 @@ h1 a{
 .Projects-section .explications{
     display: flex;
     flex-direction: column;
+}
 
+.Projects-section h5{
+    align-self: center;
+    font-size: 5vh;
+    padding: 3vh;
+    color : #dfd3d3;
 }
 
 .first-project {
@@ -304,6 +310,10 @@ h1 a{
     border-left: 5px solid rgb(104, 16, 38);
 }
 
+.first-project img{
+    height: 100%;
+    border-radius: 5%;
+}
 
 .second-project{
     display: flex;
@@ -324,11 +334,6 @@ h1 a{
 }
 
 .Projects-section p{
-    padding: 5vh;
-    color : #dfd3d3;
-}
-
-.Projects-section h5{
     padding: 5vh;
     color : #dfd3d3;
 }
