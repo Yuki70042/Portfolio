@@ -108,6 +108,7 @@ h1 a{
 }
 
 .hero-section section h3 {
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
     line-height: 1.4; 
@@ -277,32 +278,62 @@ h1 a{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 10%;
-    border: solid;
-    border-color:#fff;
+    margin: 20% 10% 20% 10%;
 }
 
 .Projects-section h2{
+    padding-bottom: 3vh;
+    font-size: 7vh;   
+    text-align: center;
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.6vh;
     color: #fff;
 }
 
-.first-project{
+.Projects-section .explications{
     display: flex;
-    width: 100%;
-    border: 3px solid rgb(137, 173, 68);
+    flex-direction: column;
+
 }
+
+.first-project {
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    border-top: 5px solid rgb(104, 16, 38);
+    border-left: 5px solid rgb(104, 16, 38);
+}
+
 
 .second-project{
     display: flex;
+    padding: 2%;
     width: 100%;
-    border: 3px solid rgb(42, 139, 91);
+    border-top: 5px solid rgb(104, 16, 38);
+    border-right: 5px solid rgb(104, 16, 38);
 }
+
 
 .third-project{
     display: flex;
+    padding: 2%;
     width: 100%;
-    border: 3px solid rgb(47, 72, 153);
+    border-top: 5px solid rgb(104, 16, 38);
+    border-left: 5px solid rgb(104, 16, 38);
+    border-bottom: 5px solid rgb(104, 16, 38);
 }
+
+.Projects-section p{
+    padding: 5vh;
+    color : #dfd3d3;
+}
+
+.Projects-section h5{
+    padding: 5vh;
+    color : #dfd3d3;
+}
+
+
 
 
 /* ---------------------------------------------------------------------------------------  End Projects Part */
