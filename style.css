@@ -244,7 +244,7 @@ h1 a{
     font-size: 2.5vh;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.3s ease;
     background-color: #301d52;
     color: #fff;
 }
@@ -266,7 +266,7 @@ h1 a{
     left: -3px; 
     border-radius: 50%;
     transform: translateX(-50%); 
-    transition: top 0.5s ease;
+    transition: top 0.8s ease;
     background-color: #614077;
 
 }
@@ -310,10 +310,8 @@ h1 a{
     border-left: 5px solid rgb(104, 16, 38);
 }
 
-.first-project img{
-    height: 100%;
-    border-radius: 5%;
-}
+
+
 
 .second-project{
     display: flex;
@@ -331,6 +329,14 @@ h1 a{
     border-top: 5px solid rgb(104, 16, 38);
     border-left: 5px solid rgb(104, 16, 38);
     border-bottom: 5px solid rgb(104, 16, 38);
+}
+
+.first-project img, .second-project img, .third-project img {
+    width: 40%; 
+    max-width: 100%;
+    height: auto; 
+    border-radius: 5%;
+    margin-right: 20px; 
 }
 
 .Projects-section p{
@@ -729,6 +735,27 @@ h1 a{
         height: 3vh;
     }
 
+
+    .first-project, .second-project, .third-project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first-project img, .second-project img, .third-project img {
+        width: 100%;
+        margin: 0 0 20px 0; /* Image au-dessus du texte */
+    }
+
+    .Projects-section h5 {
+        font-size: 3vh;
+    }
+
+    .Projects-section h2 {
+        font-size: 4vh;
+    }
+
+
     .bloc-media ul {
         width: 50%; 
     }
@@ -779,8 +806,8 @@ h1 a{
     }
 
     .hero-section section h3 {
-        font-size: 5vh;
-        padding: 1vh;
+        font-size: 4vh;
+        padding: 1.1vh;
         margin: 0 1vh; 
     }
 
@@ -824,6 +851,30 @@ h1 a{
         margin: 3vh 0;
         padding: 8px 15px;
         width: 90%; 
+    }
+
+    .Projects-section {
+        margin: 10% 2%; /* Réduit les marges pour les petits écrans */
+    }
+
+    .first-project, .second-project, .third-project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first-project img, .second-project img, .third-project img {
+        width: 100%;
+        margin: 0 0 15px 0; /* Image au-dessus du texte */
+    }
+
+    .Projects-section h5 {
+        font-size: 2.5vh;
+    }
+
+    .Projects-section p {
+        padding: 3vh;
+        font-size: 2vh;
     }
 
     .timeline-cursor {
