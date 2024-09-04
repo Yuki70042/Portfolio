@@ -302,16 +302,15 @@ h1 a{
     color : #dfd3d3;
 }
 
+
 .first-project {
     display: flex;
     padding: 2%;
     width: 100%;
     border-top: 5px solid rgb(104, 16, 38);
     border-left: 5px solid rgb(104, 16, 38);
+    background-color: rgba(0, 0, 0, 0.3);
 }
-
-
-
 
 .second-project{
     display: flex;
@@ -319,8 +318,8 @@ h1 a{
     width: 100%;
     border-top: 5px solid rgb(104, 16, 38);
     border-right: 5px solid rgb(104, 16, 38);
+    background-color: rgba(0, 0, 0, 0.3);
 }
-
 
 .third-project{
     display: flex;
@@ -329,6 +328,7 @@ h1 a{
     border-top: 5px solid rgb(104, 16, 38);
     border-left: 5px solid rgb(104, 16, 38);
     border-bottom: 5px solid rgb(104, 16, 38);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .first-project img, .second-project img, .third-project img {
@@ -343,6 +343,26 @@ h1 a{
     padding: 5vh;
     color : #dfd3d3;
 }
+
+
+.Project-button {
+    margin-top: 20px;
+    margin-left: 60%;
+    padding: 1.5vh 3vh; 
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer; 
+    transition: background-color 0.8s ease; 
+    font-size: 3.5vh; 
+    font-family: 'Balance', Arial, Helvetica, sans-serif; 
+    background-color: #750f33;
+    color: #fff; 
+}
+
+.Project-button:hover {
+    background-color: #a01745; 
+}
+
 
 
 
@@ -744,7 +764,7 @@ h1 a{
 
     .first-project img, .second-project img, .third-project img {
         width: 100%;
-        margin: 0 0 20px 0; /* Image au-dessus du texte */
+        margin: 0 0 20px 0; 
     }
 
     .Projects-section h5 {
@@ -755,6 +775,13 @@ h1 a{
         font-size: 4vh;
     }
 
+    
+    .Project-button {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 4vh;
+        padding: 1vh 2vh;
+    }
 
     .bloc-media ul {
         width: 50%; 
@@ -854,7 +881,7 @@ h1 a{
     }
 
     .Projects-section {
-        margin: 10% 2%; /* Réduit les marges pour les petits écrans */
+        margin: 10% 2%; 
     }
 
     .first-project, .second-project, .third-project {
@@ -865,7 +892,7 @@ h1 a{
 
     .first-project img, .second-project img, .third-project img {
         width: 100%;
-        margin: 0 0 15px 0; /* Image au-dessus du texte */
+        margin: 0 0 15px 0; 
     }
 
     .Projects-section h5 {
@@ -876,6 +903,14 @@ h1 a{
         padding: 3vh;
         font-size: 2vh;
     }
+
+    .Project-button {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 2.5vh;
+        padding: 1vh 2vh;
+    }
+
 
     .timeline-cursor {
         width: 2.5vh;
