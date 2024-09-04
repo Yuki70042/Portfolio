@@ -1,3 +1,26 @@
+
+
+
+
+
+
+
+
+
+// Ajoute un menu "Burger sur les petits formats"
+document.getElementById('menu-toggle').onclick = function() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+    } else {
+        menu.classList.add('active');
+    }
+};
+
+
+
+
+// Ajoute une animations au niveau de la frise chronologique
 function showInfo(point) {
     // Réinitialise tous les points de la frise
     document.querySelectorAll('.timeline-point').forEach(function (element) {
@@ -38,13 +61,3 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("year").textContent = new Date().getFullYear(); 
 });
 
-
-// Ajoute un menu "Burger sur les petits formats"
-document.getElementById('menu-toggle').onclick = function() {
-    var menu = document.getElementById('menu');
-    if (menu.classList.contains('active')) {
-        menu.classList.remove('active');
-    } else {
-        menu.classList.add('active');
-    }
-};
