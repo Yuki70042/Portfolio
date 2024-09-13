@@ -70,6 +70,12 @@
     background-color: #750f33;
 }
 
+.navbar img {
+    height: 10vh; 
+    vertical-align: middle; 
+    margin-left: 1vh;
+}
+
 .navbar ul{
     display: flex;
     align-items: center;
@@ -89,8 +95,9 @@
     background-color: #750f33;
 }
 
+
 h1 a{
-    padding-left: 6vh;
+    margin-right: 58vh;
     font-size: 4vh;
     text-decoration: none;
     color: #fff;
