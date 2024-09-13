@@ -438,7 +438,49 @@ h1 a{
 
 
 
+/* ----------------------------------------------------------------------------------------  CV PArt */ 
 
+
+
+
+.cv-buttons {
+    display: flex;
+    justify-content: center; 
+    margin-top: 4vh;      
+}
+
+/* Style des boutons CV */
+.cv-button {
+
+    padding: 1vh 30vh 1vh 30vh ;
+    margin: 0 5vh 3vh;         
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;  
+    font-size: 22px;
+    transition: background-color 0.8s ease, transform 0.2s ease;
+    display: flex;          
+    align-items: center;    
+    justify-content: center;   
+    text-align: center;  
+}
+
+.cv-button.view {
+    background-color: #750f33; 
+}
+
+.cv-button.view:hover {
+    background-color: #a01745; 
+}
+
+.cv-button.download {
+    background-color: #750f33; 
+}
+
+.cv-button.download:hover {
+    background-color: #a01745; 
+}
 
 
 

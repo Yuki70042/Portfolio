@@ -46,3 +46,20 @@ document.addEventListener("DOMContentLoaded", function() {
             alert('erreur, Merci de Reesayer plus tard');
         });
     });
+
+
+    document.getElementById('download-cv').addEventListener('click', function() {
+        // Créer un élément <a> temporaire
+        var a = document.createElement('a');
+        a.href = 'https://exemple.com/mon-cv.pdf'; // URL de ton fichier
+        a.download = 'mon-cv.pdf'; // Nom du fichier
+        
+        // Append l'élément à la page (pour que le clic fonctionne)
+        document.body.appendChild(a);
+        
+        // Déclencher le clic sur l'élément
+        a.click();
+        
+        // Retirer l'élément de la page
+        document.body.removeChild(a);
+    });
