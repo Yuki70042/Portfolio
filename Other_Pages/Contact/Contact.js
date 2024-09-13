@@ -16,29 +16,33 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     
-
-// Interception de l'envoi du formulaire pour afficher un message de confirmation
-const form = document.querySelector('form');
-const confirmationMessage = document.getElementById('confirmation-message');
-
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            form.style.display = 'none';
-            confirmationMessage.style.display = 'block';
-        } else {
-            alert('Une erreur s\'est produite, veuillez réessayer.');
-        }
-    }).catch(error => {
-        alert('Erreur de réseau. Veuillez réessayer plus tard.');
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+    
+        var form = event.target;
+        var formData = new FormData(form);
+    
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json', // En-tête pour accepter une réponse JSON
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json(); // Convertir la réponse en JSON
+            }
+            throw new Error('Network response was not ok.'); // Gérer les erreurs de réseau
+        })
+        .then(data => {
+            // Message de succès
+            alert('Message envoyé');
+            form.reset(); // Réinitialiser le formulaire
+        })
+        .catch(error => {
+            // Gestion discrète des erreurs
+            console.error('Erreur:', error);
+            alert('erreur, Merci de Reesayer plus tard');
+        });
     });
-});
