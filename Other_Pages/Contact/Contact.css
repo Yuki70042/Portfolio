@@ -6,17 +6,6 @@
 }
 
 
-.loader-container{
-    position: fixed;
-    background-color: #0b001a;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 1s ease-in-out;
-}
-
 
 /* ----------------------------------------------------------------------------------------  Header */
 .navbar{
@@ -83,12 +72,123 @@ h1 a{
 
 /* ----------------------------------------------------------------------------------------  End of Header */
 
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; 
+    padding: 5vh;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #665d72;
+    padding: 2vh;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(82, 146, 63, 0.1);
+    max-width: 75vh;
+    width: 100%;
+}
+
+h2 {
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #242222;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #242222;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 1s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #760f2e;
+    box-shadow: 0 0 5px rgb(128, 108, 79);
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5c0d25;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #811838;
+}
 
 
+/* ----------------------------------------------------------------------------------------  CV Section */
 
+/* Style du conteneur des boutons CV */
+.cv-buttons {
+    display: flex;
+    justify-content: center; 
+    margin-top: 4vh;      
+}
 
+/* Style des boutons CV */
+.cv-button {
+    flex: 1;
+    padding: 15px;
+    margin: 0 5vh;         
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;  
+    font-size: 20px;
+    transition: background-color 0.8s ease, transform 0.2s ease;
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
+    min-width: 200px;      
+    text-align: center;
+    white-space: nowrap;   
+}
 
+.cv-button.view {
+    background-color: #750f33; 
+}
 
+.cv-button.view:hover {
+    background-color: #a01745; 
+}
+
+.cv-button.download {
+    background-color: #750f33; 
+}
+
+.cv-button.download:hover {
+    background-color: #a01745; 
+}
 
 
 
