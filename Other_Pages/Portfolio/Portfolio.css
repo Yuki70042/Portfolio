@@ -37,7 +37,7 @@
     content:"";
     bottom: 0;
     width: 78%;
-    height: 2px;
+    height: 5px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #750f33;
@@ -186,24 +186,6 @@ h1 a{
 
 
 /* ----------------------------------------------------------------------------------------   Video Game part */
-.menu {
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#game-container {
-    display: none; /* Le jeu est caché par défaut */
-    margin-top: 20px;
-}
-
-canvas {
-    border: 2px solid #000;
-}
 
 
 

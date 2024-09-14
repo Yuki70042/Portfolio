@@ -77,7 +77,7 @@ h1 a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 60vh; 
+    min-height: 60vh;
     padding: 5vh;
 }
 
@@ -85,7 +85,7 @@ h1 a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #91889b;
+    background-color: #2A1A3A; /* Fond violet très foncé */
     padding: 2vh;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(82, 146, 63, 0.1);
@@ -97,9 +97,9 @@ h2 {
     font-size: 4vh;
     text-align: center;
     margin-bottom: 20px;
-    background-color: #2e1228;
-    border-radius: 20px ;
-    color: #dacbda;
+    background-color: #490e3f; /* Bordeaux pour le titre */
+    border-radius: 20px;
+    color: #dfdae0; /* Blanc cassé pour le texte du titre */
 }
 
 .contact-form .form-group {
@@ -110,23 +110,25 @@ h2 {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #242222;
+    color: #F2EEF3; /* Blanc cassé pour les labels */
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
-    transition: border-color 1s ease;
+    background-color: #EDE9F0; /* Fond gris clair-violet */
+    color: #4A4A4A; /* Texte gris foncé */
+    transition: border-color 0.5s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #760f2e;
-    box-shadow: 0 0 5px rgb(128, 108, 79);
+    border-color: #8B1E42; /* Bordure bordeaux */
+    box-shadow: 0 0 10px rgba(139, 30, 66, 0.3); /* Effet focus accentué */
     outline: none;
 }
 
@@ -134,64 +136,60 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #5c0d25;
+    background-color: #8B1E42; /* Bordeaux profond */
     border: none;
     color: #fff;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.8s ease, transform 0.2s ease;
+    transition: background-color 0.5s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #811838;
+    background: linear-gradient(90deg, #8B1E42, #AF335A); /* Gradient pour le bouton */
+    transform: scale(1.05); /* Zoom léger au survol */
 }
-
 
 /* ----------------------------------------------------------------------------------------  CV Section */
-
-/* Style du conteneur des boutons CV */
 .cv-buttons {
     display: flex;
-    justify-content: center; 
-    margin-top: 4vh;      
+    justify-content: center;
+    margin-top: 4vh;
 }
 
-/* Style des boutons CV */
 .cv-button {
     flex: 1;
     padding: 15px;
-    margin: 0 5vh;         
+    margin: 0 5vh;
     border: none;
     border-radius: 8px;
     color: #fff;
-    text-decoration: none;  
+    text-decoration: none;
     font-size: 25px;
-    transition: background-color 0.8s ease, transform 0.2s ease;
-    display: flex;          
-    align-items: center;    
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    min-width: 300px;      
+    min-width: 300px;
     text-align: center;
-    white-space: nowrap;   
+    white-space: nowrap;
 }
 
 .cv-button.view {
-    background-color: #750f33; 
+    background-color: #8B1E42;
 }
 
 .cv-button.view:hover {
-    background-color: #a01745; 
+    background-color: #AF335A;
 }
 
 .cv-button.download {
-    background-color: #750f33; 
+    background-color: #8B1E42;
 }
 
 .cv-button.download:hover {
-    background-color: #a01745; 
+    background-color: #AF335A;
 }
-
 
 
 
