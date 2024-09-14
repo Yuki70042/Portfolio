@@ -97,7 +97,7 @@ h2 {
     font-size: 4vh;
     text-align: center;
     margin-bottom: 20px;
-    background-color: #490e3f; /* Bordeaux pour le titre */
+    background-color: #472942; /* Bordeaux pour le titre */
     border-radius: 20px;
     color: #dfdae0; /* Blanc cassé pour le texte du titre */
 }
@@ -442,3 +442,136 @@ button:hover {
 
 
 /* ----------------------------------------------------------------------------------------    Responsive Part */
+
+/* ------------ Format Tablette  -------------- */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    h1 a {
+        padding: 1vh;
+        font-size: 3.5vh;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: none;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        height: 100vh;
+        background-color: rgba(26, 15, 43, 0.95);
+        z-index: 100;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        font-size: 2.5vh;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        z-index: 101;
+        display: block;
+        cursor: pointer;
+        font-size: 4vh;
+        color: #fff;
+        position: relative; 
+        margin-right: 20px;
+    }
+    .bloc-media ul {
+        width: 50%; 
+    }
+
+    .bloc-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloc-menu ul li {
+        margin: 10px 0; 
+    }
+
+    .bloc-menu ul li a {
+        font-size: 2.5vh;
+    }
+
+    .bloc-copyright {
+        margin-top: 2vh;
+        font-size: 2vh; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Format Téléphone -------------- */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    h1 {
+        flex-grow: 1;
+    }
+
+    .menu-toggle {
+        margin-left: auto; 
+    }
+
+    h1 a {
+        font-size: 3vh;
+    }
+
+    .navbar ul li a {
+        font-size: 2vh;
+    }
+
+
+
+    
+
+    .bloc-media ul {
+        width: 70%; 
+    }
+
+    .bloc-menu ul li a {
+        font-size: 2vh; 
+    }
+
+    .bloc-menu ul li {
+        margin: 8px 0; 
+    }
+}
