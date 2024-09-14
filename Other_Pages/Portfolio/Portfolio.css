@@ -83,12 +83,127 @@ h1 a{
 
 /* ----------------------------------------------------------------------------------------  End of Header */
 
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background: linear-gradient(to bottom, rgba(4, 0, 10, 0.2), rgba(4, 0, 10, 2)),
+                url('BackgroundPortfolio.jpg'); /* Chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 7rem; 
+    align-items: flex-start;
+    padding: 2rem; 
+    border-radius: 10px; 
+}
+
+
+/* --------------------------------------------------------------------------------------- Projects Part */
+
+.Projects-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20% 10% 20% 10%;
+}
+
+.Projects-section h2{
+    padding-bottom: 4vh;
+    font-size: 7vh;   
+    text-align: center;
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.6vh;
+    color: #fff;
+}
+
+.Projects-section .explications{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Projects-section h5{
+    align-self: center;
+    font-size: 5vh;
+    padding: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color : #dfd3d3;
+}
+
+
+.first-project {
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    border-top: 5px solid rgb(104, 16, 38);
+    border-left: 5px solid rgb(104, 16, 38);
+
+}
+
+.second-project{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    border-top: 5px solid rgb(104, 16, 38);
+    border-right: 5px solid rgb(104, 16, 38);
+
+}
+
+.third-project{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    border-top: 5px solid rgb(104, 16, 38);
+    border-left: 5px solid rgb(104, 16, 38);
+    border-bottom: 5px solid rgb(104, 16, 38);
+
+}
+
+.first-project img, .second-project img, .third-project img {
+    width: 40%; 
+    max-width: 100%;
+    height: auto; 
+    border-radius: 5%;
+    margin-right: 20px; 
+}
+
+.Projects-section p{
+    padding: 5vh;
+    font-size: 2vh;
+    color : #dfd3d3;
+}
 
 
 
 
+/* ----------------------------------------------------------------------------------------   Video Game part */
+.menu {
+    margin-bottom: 20px;
+}
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
+#game-container {
+    display: none; /* Le jeu est caché par défaut */
+    margin-top: 20px;
+}
+
+canvas {
+    border: 2px solid #000;
+}
 
 
 

@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 // Ajoute un menu "Burger sur les petits formats"
 document.getElementById('menu-toggle').onclick = function() {
     var menu = document.getElementById('menu');
@@ -61,3 +54,21 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("year").textContent = new Date().getFullYear(); 
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Crée un observateur
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Ajoute la classe 'visible' lorsque l'élément entre dans la vue
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Sélectionne tous les éléments à observer
+    document.querySelectorAll('.fade-in').forEach(element => {
+        observer.observe(element);
+    });
+});
