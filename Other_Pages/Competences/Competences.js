@@ -16,3 +16,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     
+
+let angle = 0;
+
+function rotateCarousel(direction) {
+    const carousel = document.querySelector('.carousel');
+    angle += direction * 60;  // Chaque élément occupe maintenant 60° (360° / 6 éléments)
+    carousel.style.transform = `rotateY(${angle}deg)`;
+}
+
+function openPDF(file) {
+    window.open(file, '_blank');
+}

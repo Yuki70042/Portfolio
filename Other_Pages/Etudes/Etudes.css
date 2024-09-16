@@ -84,14 +84,29 @@ h1 a{
 /* ----------------------------------------------------------------------------------------  End of Header */
 
 
+.BTS_Bloc {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+    text-decoration: none;
+    color: #fff;
+    width: 100%; 
+    margin: 0; 
+}
 
+.Etude01_Fond {
+    display: flex;
+    width: 100%; 
+}
 
+.Etude01_Fond img {
+    width: 100%; 
+    height: auto; 
+}
 
-
-
-
-
-
+.BTS_SIO {
+    padding: 10px; 
+}
 
 /* ----------------------------------------------------------------------------------------   Background Part */
 
