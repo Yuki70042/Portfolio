@@ -101,11 +101,36 @@ h1 a{
 
 .Etude01_Fond img {
     width: 100%; 
+    border-radius: 100px;
     height: auto; 
 }
 
 .BTS_SIO {
-    padding: 10px; 
+    margin: 1% 10% 3% 10%;
+    padding: 100px; 
+    border-radius: 20px;
+    background-color: #99596f;
+}
+
+
+.Options_bloc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option_bloc1{
+    background-color: #99596f;
+    margin: 0% 4% 2% 10%;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+
+.option_bloc2{
+    background-color: #99596f;
+    margin: 0% 10% 2% 4%;
+    padding: 3%;
+    border-radius: 20px;
 }
 
 /* ----------------------------------------------------------------------------------------   Background Part */
