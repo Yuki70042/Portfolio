@@ -306,7 +306,7 @@ h1 a{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 20% 10% 20% 10%;
+    margin: 20% 10% 15% 10%;
 }
 
 .Projects-section h2{
@@ -411,7 +411,6 @@ h1 a{
     margin-bottom: 3%;
     width: 100%;
     height: 100%;
-    border: 2px solid red;
     color: #dfd3d3;
 }
 
@@ -426,7 +425,7 @@ h1 a{
 
 .studies_box, .certification_box{
     flex-direction: column;
-    padding: 3%;
+    padding: 3% 5% 3% 5%;
 }
 
 
