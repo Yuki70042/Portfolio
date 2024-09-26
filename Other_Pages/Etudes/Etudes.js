@@ -25,3 +25,10 @@ function toggleSection(id) {
         section.classList.add('active');
     }
 }
+
+document.querySelectorAll(".Options_bloc h3").forEach(function(option) {
+    option.addEventListener("click", function() {
+        const sectionDetails = document.querySelector("." + this.classList[0] + "_details");
+        sectionDetails.classList.toggle("active");
+    });
+});

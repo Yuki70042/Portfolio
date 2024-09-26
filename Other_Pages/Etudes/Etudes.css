@@ -82,126 +82,122 @@ h1 a{
 
 
 /* ----------------------------------------------------------------------------------------  End of Header */
-/* Animation fluide pour les sections déroulantes */
-.section-details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, padding 0.3s ease;
-    margin-top: 10px;
-}
 
-/* Activer l'effet de glissement pour les sections déroulantes */
-.section-details.active {
-    max-height: 500px; /* Ajuste en fonction de la taille de la section */
-    padding: 20px 15px; /* Plus d'espace autour du texte */
-    margin-top: 15px;
-}
 
-/* Centrer le conteneur principal et limiter sa largeur */
+/* Général - Centrage du conteneur principal */
 .BTS_Bloc {
     text-align: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-}
-
-/* Flexbox pour les boutons déroulants */
-.Options_bloc {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-/* Style pour les titres des options (boutons) */
-.Options_bloc h3 {
-    cursor: pointer;
-    font-size: 20px;
-    background-color: #750f33;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-    width: 40%;
-    text-align: center;
-}
-
-.Options_bloc h3:hover {
-    background-color: #a01745;
-}
-
-/* Style général pour la section BTS SIO */
-.BTS_SIO {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    font-size: 18px;
 }
 
-/* Ajout d'un espacement en dessous de la section */
-.BTS_SIO {
-    margin-bottom: 50px;
+/* Image de fond étendue sur toute la largeur */
+.BTS_Bloc .Etude01_Fond img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
-/* Style spécifique pour les items de la liste dans la section BTS SIO */
-.BTS_SIO ul li {
-    background-color: rgba(255, 255, 255, 0.1);
+/* Style pour la section BTS SIO - Fond doux et espace */
+.BTS_Bloc .BTS_SIO {
+    background-color: #2a2a2a; /* Fond sombre harmonieux */
+    color: #d3d3d3; /* Texte plus doux */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    margin-bottom: 20px;
+}
+
+/* Titre BTS SIO */
+.BTS_Bloc .BTS_SIO h3 {
+    font-size: 28px;
+    color: #a67ca3; /* Titre mauve contrasté */
+    margin-bottom: 20px;
+}
+
+/* Listes de compétences dans des boîtes */
+.BTS_Bloc .BTS_SIO ul li {
+    background-color: rgba(118, 15, 46, 0.05);
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Grille pour les compétences */
-ul.grid-list {
+/* Grille de compétences 2 colonnes */
+.BTS_Bloc ul.grid-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Grille 2 colonnes */
-    gap: 20px; /* Espacement entre les items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Flexbox pour les options (SISR/SLAM) */
+.BTS_Bloc .Options_bloc {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
+    gap: 30px;
 }
 
-/* Style des paragraphes et du texte */
-p, h3 {
-    font-size: 18px; /* Taille légèrement augmentée */
-    line-height: 1.6;
-    text-align: left;
-}
-
-/* Style des détails pour les options */
-.section-details {
-    background-color: rgba(0, 0, 0, 0.6);
+/* Style pour les titres des options - Boutons cliquables */
+.BTS_Bloc .Options_bloc h3 {
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #6d2945; /* Bouton mauve foncé */
     color: white;
-    padding: 20px; /* Plus d'espace pour le texte */
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    text-align: center;
+    flex: 1;
+}
+
+/* Effet de hover sur les boutons */
+.BTS_Bloc .Options_bloc h3:hover {
+    background-color: #811838; /* Rouge bordeaux pour le hover */
+}
+
+/* Contenu déroulant sous les options */
+.BTS_Bloc .section-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    background-color: #1f2a44; /* Bleu nuit pour un fond contrasté */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
     margin-top: 10px;
 }
 
-/* Ajout d'espacement supplémentaire sous chaque section pour plus d'aération */
-.section-details {
-    margin-bottom: 50px;
+/* Activer l'effet de glissement */
+.BTS_Bloc .section-details.active {
+    max-height: 1000px;
+    padding: 20px;
 }
 
-/* Effet de hover sur les éléments cliquables */
-.section-details h3:hover {
-    background-color: #a01745;
+/* Style des paragraphes */
+.BTS_Bloc p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d3d3d3;
 }
 
-/* Faire en sorte que l'image prenne toute la largeur de la page */
-.Etude01_Fond img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* L'image s'adapte bien à la largeur sans déformation */
+/* Améliorer la visibilité des listes */
+.BTS_Bloc ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-/* Espacement supplémentaire sous le bloc image */
-.Etude01_Fond {
-    margin-bottom: 20px;
+.BTS_Bloc ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #413f3f; /* Fond assorti à la section */
+    border-left: 4px solid #760f2e; /* Bord bordeaux */
 }
+
 
 
 
