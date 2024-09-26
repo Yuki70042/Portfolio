@@ -115,6 +115,8 @@ h1 a{
     font-size: 4vh;
     color: #750f33; /* Titre mauve contrasté */
     margin-bottom: 20px;
+    background-color: #a79eaa;
+    border-radius: 30px;
 }
 
 /* Listes de compétences dans des boîtes */
@@ -165,7 +167,7 @@ h1 a{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.3s ease;
-    background-color: #1f2a44; /* Bleu nuit pour un fond contrasté */
+    background-color: #17151d; /* Bleu nuit pour un fond contrasté */
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
@@ -175,7 +177,8 @@ h1 a{
 /* Activer l'effet de glissement */
 .BTS_Bloc .section-details.active {
     max-height: 1000px;
-    padding: 20px;
+    padding: 30px;
+    margin: 3vh;
 }
 
 /* Style des paragraphes */
@@ -189,6 +192,9 @@ h1 a{
 .BTS_Bloc ul {
     list-style: none;
     padding-left: 0;
+    color: #d3d3d3;
+    margin-top: 3vh; /* Espace avant la liste */
+    margin-bottom: 1vh; /* Espace après la liste */
 }
 
 .BTS_Bloc ul li {
@@ -196,6 +202,7 @@ h1 a{
     padding: 10px;
     background-color: #413f3f; /* Fond assorti à la section */
     border-left: 4px solid #760f2e; /* Bord bordeaux */
+    border-radius: 2px;
 }
 
 
