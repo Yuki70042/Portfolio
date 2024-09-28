@@ -72,3 +72,21 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(element);
     });
 });
+
+
+// Attendre que le DOM soit entièrement chargé
+window.addEventListener("load", function () {
+    const preloader = document.getElementById('preloader');
+    const mainContent = document.getElementById('main-content');
+
+    // Délai de 3 secondes pour simuler un chargement
+    setTimeout(function () {
+        preloader.style.opacity = '0';
+        
+        // Retirer le préchargeur du flux après l'animation de fondu
+        setTimeout(function () {
+            preloader.style.display = 'none';
+            mainContent.classList.remove('hidden'); // Montrer le contenu principal
+        }, 1000); // Temps de transition
+    }, 2000); // Durée avant disparition du préchargeur
+});

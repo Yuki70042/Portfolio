@@ -46,8 +46,32 @@
     display: flex;
     justify-content: center;
     align-items: center ;
+    z-index: 1000;
+    transition: opacity 1s ease-out;
 }
 
+#preloader img {
+    width: 50vh; /* ajuster selon ton logo */
+    animation: fadein 2s ease-out;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hidden {
+    display: none;
+}
+
+#main-content {
+    opacity: 0;
+    animation: fadeInContent 1s forwards 1s; /* apparait après 1s */
+}
+
+@keyframes fadeInContent {
+    to { opacity: 1; }
+}
 
 /* ----------------------------------------------------------------------------------------  End Preloader */
 
