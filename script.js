@@ -74,19 +74,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Attendre que le DOM soit entièrement chargé
+
 window.addEventListener("load", function () {
     const preloader = document.getElementById('preloader');
     const mainContent = document.getElementById('main-content');
 
-    // Délai de 3 secondes pour simuler un chargement
+    // Attendre exactement 2.25 secondes (durée totale de l'animation du logo)
     setTimeout(function () {
-        preloader.style.opacity = '0';
-        
-        // Retirer le préchargeur du flux après l'animation de fondu
+        preloader.style.opacity = '0'; // Faire disparaître le préchargeur
         setTimeout(function () {
-            preloader.style.display = 'none';
-            mainContent.classList.remove('hidden'); // Montrer le contenu principal
-        }, 1000); // Temps de transition
-    }, 2000); // Durée avant disparition du préchargeur
+            preloader.style.display = 'none'; // Cacher complètement le préchargeur
+            mainContent.classList.remove('hidden'); // Montrer le contenu principal immédiatement
+        }, 300); // Transition rapide de 0.1s pour l'opacité du contenu
+    }, 2250); // 2.25 secondes pour l'animation complète du logo
 });

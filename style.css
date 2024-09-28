@@ -32,43 +32,68 @@
     box-sizing: border-box;
 }
 
-
+body{
+    background-color: #0b001a;
+}
 
 
 /* ----------------------------------------------------------------------------------------  Preloader */
+
+
+/* Préchargeur pleine page */
 #preloader {
-    position : fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0b001a;
+    background-color: #0b001a; /* Fond du préchargeur */
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     z-index: 1000;
-    transition: opacity 1s ease-out;
+    transition: opacity 0.25s ease-out; /* Transition rapide de l'opacité */
 }
 
+/* Logo du préchargeur */
 #preloader img {
-    width: 50vh; /* ajuster selon ton logo */
-    animation: fadein 2s ease-out;
+    width: 50vh;
+    animation: fadein 1.5s ease-out, shrinkAndFade 0.75s 1.5s ease forwards;
 }
 
+/* Animation de fade-in du logo */
 @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+/* Animation de rétrécissement et disparition du logo */
+@keyframes shrinkAndFade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Masquer le contenu principal au départ */
 .hidden {
     display: none;
 }
 
+/* Appliquer la couleur de fond au contenu principal avant de l'afficher */
 #main-content {
     opacity: 0;
-    animation: fadeInContent 1s forwards 1s; /* apparait après 1s */
+    animation: fadeInContent 0.1s forwards; /* Apparition immédiate du contenu après le préchargeur */
+    background-color: #0b001a; /* Fond du contenu principal */
+    min-height: 100vh; /* S'assurer que la hauteur de la page est couverte */
+    color: white; /* Ajuster la couleur du texte pour la lisibilité */
 }
 
+/* Animation de fade-in pour le contenu principal */
 @keyframes fadeInContent {
     to { opacity: 1; }
 }
