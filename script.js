@@ -11,26 +11,34 @@ document.getElementById('menu-toggle').onclick = function() {
 };
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
-    const scrollButtons = document.querySelectorAll('.scroll-button'); // Sélectionner tous les boutons
+    const title = document.querySelector('.animated-title');
+    const lines = title.innerHTML.split('<br>'); 
+    title.innerHTML = ''; 
 
-    scrollButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            event.preventDefault(); // Empêcher le comportement par défaut du lien
+    lines.forEach((line, lineIndex) => {
+        const lineDiv = document.createElement('div'); 
 
-            const targetID = this.getAttribute('href'); // Obtenir l'ID de la cible
-            const targetElement = document.querySelector(targetID); // Sélectionner l'élément cible
+        line.split('').forEach((letter, index) => {
+            const span = document.createElement('span');
 
-            if (targetElement) {
-                // Faire défiler la page de manière fluide
-                targetElement.scrollIntoView({
-                    behavior: 'smooth', // Effet de défilement fluide
-                    block: 'start' // Défilement jusqu'en haut de l'élément
-                });
-            }
+            
+            span.innerHTML = letter === ' ' ? '&nbsp;' : letter;
+
+            lineDiv.appendChild(span); 
+
+            
+            setTimeout(() => {
+                span.style.opacity = '1'; 
+                span.style.transform = 'translateY(0)';
+            }, (lineIndex * line.length + index) * 150); 
         });
+
+        title.appendChild(lineDiv); 
     });
 });
+
 
 
 
