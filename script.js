@@ -11,6 +11,49 @@ document.getElementById('menu-toggle').onclick = function() {
 };
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollButtons = document.querySelectorAll('.scroll-button'); // Sélectionner tous les boutons
+
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Empêcher le comportement par défaut du lien
+
+            const targetID = this.getAttribute('href'); // Obtenir l'ID de la cible
+            const targetElement = document.querySelector(targetID); // Sélectionner l'élément cible
+
+            if (targetElement) {
+                // Faire défiler la page de manière fluide
+                targetElement.scrollIntoView({
+                    behavior: 'smooth', // Effet de défilement fluide
+                    block: 'start' // Défilement jusqu'en haut de l'élément
+                });
+            }
+        });
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const startButton = document.querySelector('.start-button');
+
+    startButton.addEventListener('click', function(event) {
+        event.preventDefault(); 
+
+        const targetID = this.getAttribute('href'); 
+        const targetElement = document.querySelector(targetID); 
+
+        if (targetElement) {
+            // Faire défiler la page de manière fluide
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start' 
+            });
+        }
+    });
+});
+
+
 
 
 // Ajoute une animations au niveau de la frise chronologique

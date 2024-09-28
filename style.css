@@ -34,13 +34,14 @@
 
 body{
     background-color: #0b001a;
+    scroll-behavior: smooth;
 }
 
 
 /* ----------------------------------------------------------------------------------------  Preloader */
 
 
-/* Préchargeur pleine page */
+
 #preloader {
     position: fixed;
     top: 0;
@@ -55,19 +56,19 @@ body{
     transition: opacity 0.25s ease-out; /* Transition rapide de l'opacité */
 }
 
-/* Logo du préchargeur */
+
 #preloader img {
     width: 50vh;
     animation: fadein 1.5s ease-out, shrinkAndFade 0.75s 1.5s ease forwards;
 }
 
-/* Animation de fade-in du logo */
+
 @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-/* Animation de rétrécissement et disparition du logo */
+
 @keyframes shrinkAndFade {
     0% {
         transform: scale(1);
@@ -79,21 +80,21 @@ body{
     }
 }
 
-/* Masquer le contenu principal au départ */
+
 .hidden {
     display: none;
 }
 
-/* Appliquer la couleur de fond au contenu principal avant de l'afficher */
+
 #main-content {
     opacity: 0;
-    animation: fadeInContent 0.1s forwards; /* Apparition immédiate du contenu après le préchargeur */
-    background-color: #0b001a; /* Fond du contenu principal */
-    min-height: 100vh; /* S'assurer que la hauteur de la page est couverte */
-    color: white; /* Ajuster la couleur du texte pour la lisibilité */
+    animation: fadeInContent 0.1s forwards; 
+    background-color: #0b001a; 
+    min-height: 100vh; 
+    color: white; 
 }
 
-/* Animation de fade-in pour le contenu principal */
+
 @keyframes fadeInContent {
     to { opacity: 1; }
 }
@@ -218,6 +219,14 @@ h1 a{
 .start-button:hover {
     background-color: #a01745; 
 }
+
+.animated-title span {
+    opacity: 0;
+    display: inline-block; /* Pour que chaque lettre soit en bloc */
+    transform: translateY(20px); /* Déplacement vers le bas */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition pour l'apparition */
+}
+
 
  /* ------------------- Portrait Part */
 
