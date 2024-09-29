@@ -362,8 +362,21 @@ h1 a{
     transform: translateX(-50%); 
     transition: top 0.8s ease;
     background-color: #614077;
-
 }
+
+
+
+/* Animation de fondu */
+.fade {
+    opacity: 0; /* Le texte commence transparent */
+    transition: opacity 0.5s ease-in-out; /* Transition sur l'opacité pour un effet de fondu */
+}
+
+.fade.visible {
+    opacity: 1; /* Le texte devient opaque */
+}
+
+
 /* --------------------------------------------------------------------------------------- End About Me Part */
 
 /* --------------------------------------------------------------------------------------- Projects Part */
