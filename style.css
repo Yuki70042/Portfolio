@@ -495,7 +495,6 @@ h1 a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     margin-bottom: 3%;
     height: 100%;
     color: #dfd3d3;
@@ -536,18 +535,23 @@ h1 a{
 /* Style des boutons CV */
 .cv-button {
 
-    padding: 1vh 30vh 1vh 30vh ;
-    margin: 0 5vh 3vh;         
-    border: none;
-    border-radius: 12px;
-    color: #fff;
-    text-decoration: none;  
-    font-size: 22px;
-    transition: background-color 0.8s ease, transform 0.2s ease;
-    display: flex;          
+    display: block;  
     align-items: center;    
     justify-content: center;   
     text-align: center;  
+    padding: 1vh 30vh 1vh 30vh ;
+    margin: 0 5vh 3vh;         
+    width: 40%;
+
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;  
+
+    transition: background-color 0.8s ease, transform 0.2s ease;
+    font-family: 'Balance', Arial, Helvetica, sans-serif; 
+    font-size: 2.5vh;
+        
+
 }
 
 .cv-button.view {
@@ -1017,6 +1021,22 @@ h1 a{
         padding: 1vh 2vh;
     }
 
+
+
+
+
+
+
+
+    .cv-button {
+        width: 60%; 
+    }
+
+
+
+
+
+
     .bloc-media ul {
         width: 50%; 
     }
@@ -1114,6 +1134,12 @@ h1 a{
         width: 90%; 
     }
 
+    .timeline-cursor {
+        width: 2.5vh;
+        height: 2.5vh;
+    }
+
+
     .Projects-section {
         margin: 10% 2%; 
     }
@@ -1146,10 +1172,13 @@ h1 a{
     }
 
 
-    .timeline-cursor {
-        width: 2.5vh;
-        height: 2.5vh;
+
+
+    .cv-button {
+        width: 80%; 
+        font-size: 14px; 
     }
+
 
     .bloc-media ul {
         width: 70%; 
