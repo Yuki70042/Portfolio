@@ -84,54 +84,129 @@ h1 a{
 /* ----------------------------------------------------------------------------------------  End of Header */
 
 
+/* Général - Centrage du conteneur principal */
 .BTS_Bloc {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Image de fond étendue sur toute la largeur */
+.BTS_Bloc .Etude01_Fond img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Style pour la section BTS SIO - Fond doux et espace */
+.BTS_Bloc .BTS_SIO {
+    background-color: #1b1920; /* Fond sombre harmonieux */
+    color: #d3d3d3; /* Texte plus doux */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    margin-bottom: 20px;
+}
+
+/* Titre BTS SIO */
+.BTS_Bloc .BTS_SIO h3 {
     font-size: 4vh;
-    text-decoration: none;
-    color: #fff;
-    width: 100%; 
-    margin: 0; 
+    color: #750f33; /* Titre mauve contrasté */
+    margin-bottom: 20px;
+    background-color: #a79eaa;
+    border-radius: 30px;
 }
 
-.Etude01_Fond {
-    display: flex;
-    width: 100%; 
+/* Listes de compétences dans des boîtes */
+.BTS_Bloc .BTS_SIO ul li {
+    background-color: rgba(118, 15, 46, 0.05);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.Etude01_Fond img {
-    width: 100%; 
-    border-radius: 50px;
-    height: auto; 
+/* Grille de compétences 2 colonnes */
+.BTS_Bloc ul.grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.BTS_SIO {
-    margin: 1% 10% 3% 10%;
-    padding: 100px; 
-    border-radius: 20px;
-    background-color: #99596f;
-}
-
-
-.Options_bloc{
+/* Flexbox pour les options (SISR/SLAM) */
+.BTS_Bloc .Options_bloc {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px;
 }
 
-.option_bloc1{
-    background-color: #99596f;
-    margin: 0% 4% 2% 10%;
-    padding: 3%;
-    border-radius: 20px;
+/* Style pour les titres des options - Boutons cliquables */
+.BTS_Bloc .Options_bloc h3 {
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #57112e; /* Bouton mauve foncé */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    flex: 1;
+}
+
+/* Effet de hover sur les boutons */
+.BTS_Bloc .Options_bloc h3:hover {
+    background-color: #811838; /* Rouge bordeaux pour le hover */
+}
+
+/* Contenu déroulant sous les options */
+.BTS_Bloc .section-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    background-color: #17151d; /* Bleu nuit pour un fond contrasté */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+/* Activer l'effet de glissement */
+.BTS_Bloc .section-details.active {
+    max-height: 1000px;
+    padding: 30px;
+    margin: 3vh;
+}
+
+/* Style des paragraphes */
+.BTS_Bloc p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d3d3d3;
+}
+
+/* Améliorer la visibilité des listes */
+.BTS_Bloc ul {
+    list-style: none;
+    padding-left: 0;
+    color: #d3d3d3;
+    margin-top: 3vh; /* Espace avant la liste */
+    margin-bottom: 1vh; /* Espace après la liste */
+}
+
+.BTS_Bloc ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #413f3f; /* Fond assorti à la section */
+    border-left: 4px solid #760f2e; /* Bord bordeaux */
+    border-radius: 2px;
 }
 
 
-.option_bloc2{
-    background-color: #99596f;
-    margin: 0% 10% 2% 4%;
-    padding: 3%;
-    border-radius: 20px;
-}
+
 
 /* ----------------------------------------------------------------------------------------   Background Part */
 

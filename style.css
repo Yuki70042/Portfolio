@@ -33,16 +33,23 @@
 }
 
 
-.loader-container{
-    position: fixed;
-    background-color: #0b001a;
+
+
+/* ----------------------------------------------------------------------------------------  Preloader */
+#preloader {
+    position : fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: #0b001a;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: opacity 1s ease-in-out;
+    align-items: center ;
 }
+
+
+/* ----------------------------------------------------------------------------------------  End Preloader */
 
 
 /* ----------------------------------------------------------------------------------------  Header */
@@ -306,7 +313,7 @@ h1 a{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 20% 10% 20% 10%;
+    margin: 20% 10% 15% 10%;
 }
 
 .Projects-section h2{
@@ -411,7 +418,6 @@ h1 a{
     margin-bottom: 3%;
     width: 100%;
     height: 100%;
-    border: 2px solid red;
     color: #dfd3d3;
 }
 
@@ -426,7 +432,7 @@ h1 a{
 
 .studies_box, .certification_box{
     flex-direction: column;
-    padding: 3%;
+    padding: 3% 5% 3% 5%;
 }
 
 
