@@ -106,7 +106,11 @@ h1 a{
     border-radius: 10px; 
 }
 
-
+.balise{
+    color: rgb(105, 18, 37);   
+    font-size: 4vh;
+    padding-left: 3%;
+}
 
 /* ----------------------------------------------------------------------------------------  Certifications part*/
 
