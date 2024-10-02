@@ -163,16 +163,16 @@ h1 a{
 }
 
 #menu-toggle {
+    display: none;
     position: absolute;
-    right: 20px; /* Assure qu'il reste à l'intérieur de l'écran */
-    top: 20px; /* Ajuste selon tes besoins */
-    z-index: 1000; /* Assure qu'il reste au-dessus des autres éléments */
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
 }
-
 
 #menu {
     width: 100%;
-    max-width: 100vw; /* Empêche le menu de dépasser la largeur de l'écran */
+    max-width: 100vw;
     overflow: hidden;
 }
 
@@ -857,6 +857,11 @@ h1 a{
 
 /* ----------------------------------------------------------------------------------------    Responsive Part */
 
+
+
+
+
+
 /* ------------ Format Tablette  -------------- */
 @media (max-width: 768px) {
 
@@ -904,15 +909,38 @@ h1 a{
         display: flex;
     }
 
-    .menu-toggle {
-        z-index: 101;
+
+
+
+
+    #menu-toggle {
         display: block;
-        cursor: pointer;
-        font-size: 4vh;
+        font-size: 30px;
         color: #fff;
-        position: relative; 
-        margin-right: 20px;
+        cursor: pointer;
     }
+    
+    #menu {
+        width: 70%; /* Le menu prend 70% de l'écran sur mobile */
+    }
+
+    /* Affiche le menu burger quand il est actif */
+    #menu.active {
+        right: 0;
+    }
+
+    /* Pour éviter la marge à droite causée par le menu en dehors de l'écran */
+    body.menu-open {
+        overflow-x: hidden;
+    }
+
+
+
+
+
+
+
+
     
     .hero-section {
         flex-direction: column;
