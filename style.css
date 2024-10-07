@@ -430,7 +430,6 @@ h1 a{
     width: 100%;
     border-top: 5px solid rgb(104, 16, 38);
     border-left: 5px solid rgb(104, 16, 38);
-
 }
 
 .second-project{
@@ -439,7 +438,6 @@ h1 a{
     width: 100%;
     border-top: 5px solid rgb(104, 16, 38);
     border-right: 5px solid rgb(104, 16, 38);
-
 }
 
 .third-project{
@@ -449,11 +447,10 @@ h1 a{
     border-top: 5px solid rgb(104, 16, 38);
     border-left: 5px solid rgb(104, 16, 38);
     border-bottom: 5px solid rgb(104, 16, 38);
-
 }
 
 .first-project img, .second-project img, .third-project img {
-    width: 40%; 
+    width: 50%; 
     max-width: 100%;
     height: auto; 
     border-radius: 5%;
@@ -462,8 +459,12 @@ h1 a{
 
 .Projects-section p{
     padding: 5vh;
-    font-size: 2vh;
+    font-size: 2.3vh;
     color : #dfd3d3;
+}
+
+.GitHub_Link{
+    width: 17%;
 }
 
 
