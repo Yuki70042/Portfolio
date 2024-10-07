@@ -463,9 +463,21 @@ h1 a{
     color : #dfd3d3;
 }
 
-.GitHub_Link{
-    width: 17%;
+
+.GitHub_Link {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    margin-top: 20px;
 }
+
+.GitHub_Link img {
+    max-width: 50px; 
+    width: 100%;
+    height: auto;
+}
+
 
 
 .Project-button {
@@ -519,6 +531,8 @@ h1 a{
 
 .studies_certifications_box img{
     border-radius: 10%;
+    height: 65%;
+    width: auto;
 }
 
 
