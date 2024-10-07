@@ -162,6 +162,7 @@ h1 a{
     color: #fff;
 }
 
+/*
 #menu-toggle {
     display: none;
     position: absolute;
@@ -174,7 +175,7 @@ h1 a{
     width: 100%;
     max-width: 100vw;
     overflow: hidden;
-}
+} */
 
 /* ----------------------------------------------------------------------------------------  End of Header */
 
