@@ -1,3 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root {
+  --bg: #000000;
+  --clr-1: #00c2ff;
+  --clr-2: #33ff8c;
+  --clr-3: #ffc640;
+  --clr-4: #e54cff;
+
+  --blur: 1rem;
+  --fs: clamp(3rem, 8vw, 7rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+
 
 *{ /* On initialize la page avec des valeurs par défaut*/
     margin:0px; 
@@ -74,12 +89,72 @@ h1 a{
 
 .contact-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    padding: 5vh;
+    min-height: 20vh;
+    padding: 2vh;
 }
+
+  /* -- Contact Animation Title */
+  .contact-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  svg {
+      display: block;
+      font: 10.5em 'Montserrat';
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+      stroke: #4D163D;
+      animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+      stroke: #63042b;
+      animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+      stroke: #BD0034;
+      animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+      stroke: #BD0034;
+      animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+      stroke: #dd991a;
+      animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+  }
+
+  /*  End Contact Animation Title */
+
+
+.informations-container{
+    background-color: #2A1A3A;
+}
+
 
 .contact-container {
     display: flex;
@@ -93,14 +168,6 @@ h1 a{
     width: 100%;
 }
 
-h2 {
-    font-size: 4vh;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #472942; /* Bordeaux pour le titre */
-    border-radius: 20px;
-    color: #dfdae0; /* Blanc cassé pour le texte du titre */
-}
 
 .contact-form .form-group {
     margin-bottom: 30px;
