@@ -187,8 +187,8 @@ svg {
 .contact-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Étire les deux formulaires pour avoir la même hauteur */
-    gap: 10vh; /* Réduit l'espace entre les deux formulaires */
+    align-items: stretch;
+    gap: 10vh; 
     padding: 2vh;
     margin: 10vh;
 }
@@ -199,9 +199,20 @@ svg {
     padding: 2vh;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(82, 146, 63, 0.1);
-    border: 3px solid rgba(255, 255, 255, 0.267); 
-    min-height: 70vh; /* Assure une hauteur minimale uniforme pour les deux sections */
+    border: 3px solid rgba(255, 255, 255, 0.295); 
+    min-height: 73vh; 
     flex: 1; 
+}
+
+
+.contact-info strong{
+    margin-left: 2vh;
+    color: #ffdff8; 
+}
+
+.contact-info img{
+    height: 6vh;
+    margin: 0 3vh 3vh 3vh;
 }
 
 /* Contenu des informations */
@@ -265,15 +276,20 @@ svg {
 
 button {
     display: block;
-    width: 100%;
-    padding: 10px;
+    margin: 7% auto 0 auto; /* Centrer horizontalement avec auto pour gauche et droite, marges en haut et bas ajustées */
+    width: 86%; /* Largeur du bouton */
+    padding: 18px;
     background-color: #8B1E42;
     border: none;
     color: #fff;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.5s ease, transform 0.2s ease;
+}
+
+button p{
+    font-size: 3vh;
 }
 
 button:hover {
@@ -283,21 +299,16 @@ button:hover {
 
 
 /* ----------------------------------------------------------------------------------------  CV Section */
-.cv-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 4vh;
-}
 
 .cv-button {
     flex: 1;
     padding: 15px;
-    margin: 0 5vh;
+    margin: 8.5vh 10vh 0 10vh;
     border: none;
     border-radius: 8px;
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 4vh;
     transition: background-color 0.5s ease, transform 0.2s ease;
     display: flex;
     align-items: center;
