@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+@font-face {
+    font-family: 'Balance';
+    src: url('../../Fonts/Balance.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     --bg: #000000;
     --clr-1: #00c2ff;
@@ -276,9 +284,9 @@ svg {
 
 button {
     display: block;
-    margin: 7% auto 0 auto; /* Centrer horizontalement avec auto pour gauche et droite, marges en haut et bas ajustées */
+    margin: 6.5% auto 0 auto; /* Centrer horizontalement avec auto pour gauche et droite, marges en haut et bas ajustées */
     width: 86%; /* Largeur du bouton */
-    padding: 18px;
+    padding: 15px;
     background-color: #8B1E42;
     border: none;
     color: #fff;
@@ -286,10 +294,12 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.5s ease, transform 0.2s ease;
+    font-family: 'Balance', Arial, Helvetica, sans-serif; 
+    letter-spacing: 1.5px;
 }
 
 button p{
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 button:hover {
@@ -310,6 +320,8 @@ button:hover {
     text-decoration: none;
     font-size: 4vh;
     transition: background-color 0.5s ease, transform 0.2s ease;
+    font-family: 'Balance', Arial, Helvetica, sans-serif; 
+    letter-spacing: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
