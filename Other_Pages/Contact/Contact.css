@@ -107,7 +107,6 @@ h1 a {
 svg {
     display: block;
     font: 8em 'Montserrat';
-    /* Ajuste cette valeur pour diminuer la taille */
     width: 960px;
     height: 300px;
     margin: 0 auto;
@@ -161,7 +160,7 @@ svg {
     height: 3px; 
     background-color: #750f33;
     transform: translateX(-50%); 
-    animation: underline-animation 3.5s ease-in-out infinite; 
+    animation: underline-animation 4.5s ease-in-out infinite; 
 }
 
 @keyframes underline-animation {
@@ -184,24 +183,28 @@ svg {
 
 /*  End Contact Animation Title */
 
+
 .contact-wrapper {
     display: flex;
-    justify-content: space-between; /* Aligner les deux colonnes avec un espace entre */
-    align-items: flex-start; /* Aligner le haut des colonnes */
-    min-height: 20vh;
+    justify-content: space-between;
+    align-items: stretch; /* Étire les deux formulaires pour avoir la même hauteur */
+    gap: 10vh; /* Réduit l'espace entre les deux formulaires */
     padding: 2vh;
+    margin: 10vh;
 }
 
-.informations-container {
+.informations-container,
+.contact-container {
     background-color: #2A1A3A;
     padding: 2vh;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(82, 146, 63, 0.1);
-    max-width: 75vh;
-    width: 100%;
-    color: white;
+    border: 3px solid rgba(255, 255, 255, 0.267); 
+    min-height: 70vh; /* Assure une hauteur minimale uniforme pour les deux sections */
+    flex: 1; 
 }
 
+/* Contenu des informations */
 .contact-info p {
     font-size: 1.2em;
     margin-bottom: 15px;
@@ -229,21 +232,7 @@ svg {
     margin-right: 10px;
 }
 
-.contact-container {
-    background-color: #2A1A3A;
-    padding: 2vh;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(82, 146, 63, 0.1);
-    max-width: 75vh;
-    width: 100%;
-}
-
-/* Pour s'assurer que les deux sections soient alignées correctement */
-.contact-wrapper > div {
-    flex: 1; /* Les deux div prennent un espace égal */
-    margin: 0 15px;
-}
-
+/* Formulaire de contact */
 .contact-form .form-group {
     margin-bottom: 30px;
 }
@@ -291,6 +280,8 @@ button:hover {
     background: linear-gradient(90deg, #8B1E42, #AF335A);
     transform: scale(1.05);
 }
+
+
 /* ----------------------------------------------------------------------------------------  CV Section */
 .cv-buttons {
     display: flex;
