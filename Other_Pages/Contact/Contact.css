@@ -208,7 +208,7 @@ svg {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(82, 146, 63, 0.1);
     border: 3px solid rgba(255, 255, 255, 0.295); 
-    min-height: 73vh; 
+    min-height: 60vh; 
     flex: 1; 
 }
 
@@ -284,8 +284,8 @@ svg {
 
 button {
     display: block;
-    margin: 6.5% auto 0 auto; /* Centrer horizontalement avec auto pour gauche et droite, marges en haut et bas ajustées */
-    width: 86%; /* Largeur du bouton */
+    margin: 12% auto 0 auto; 
+    width: 86%; 
     padding: 15px;
     background-color: #8B1E42;
     border: none;
@@ -313,7 +313,7 @@ button:hover {
 .cv-button {
     flex: 1;
     padding: 15px;
-    margin: 8.5vh 10vh 0 10vh;
+    margin: 12% 6% 2% 6%; 
     border: none;
     border-radius: 8px;
     color: #fff;
