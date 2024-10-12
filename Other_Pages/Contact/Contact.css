@@ -229,6 +229,7 @@ svg {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 .contact-info p strong {
