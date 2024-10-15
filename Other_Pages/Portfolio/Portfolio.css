@@ -89,7 +89,7 @@ h1 a{
     align-items: center;
     height: 75vh;
     background: linear-gradient(to bottom, rgba(4, 0, 10, 0.2), rgba(4, 0, 10, 2)),
-                url('BackgroundPortfolio.jpg'); /* Chemin de votre image */
+                url('../../Images/Background/Portfolio.jpg'); /* Chemin de votre image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,6 +175,21 @@ h1 a{
     border-radius: 5%;
     margin-right: 20px; 
 }
+
+.GitHub_Link {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%; /* Utilise toute la largeur disponible */
+    margin-top: 20px; /* Optionnel, pour donner un peu d'espace */
+}
+
+.GitHub_Link img {
+    max-width: 50px; /* Taille maximale de l'image */
+    width: 100%;
+    height: auto;
+}
+
 
 .Projects-section p{
     padding: 5vh;

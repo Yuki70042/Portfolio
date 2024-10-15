@@ -38,9 +38,55 @@
 
 
         <!-- Contact Form Section-->
+
+                                        <!-- Contact Title-->
+         <div class="contact-header">
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="80%">CONTACT</text>
+                </symbol>
+            
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
+              <div class="underline"></div>
+         </div>
+
+
         <div class="contact-wrapper">
+
+            <div class="informations-container">
+                <div class="contact-info">
+                    <p><strong>Localisation :</strong></p>
+                    <p>
+                        <img src="../../Images/Icons/location-icon.png" alt="Localisation" class="icon">
+                        90000 Belfort, France
+                    </p>
+            
+                    <p><strong>Email :</strong></p>
+                    <p>
+                        <img src="../../Images/Icons/email-icon.png" alt="Email" class="icon">
+                        lizblanca.pro@gmail.com
+                    </p>
+            
+                    <p><strong>Numéro Téléphone :</strong></p>
+                    <p>
+                        <img src="../../Images/Icons/phone-icon.png" alt="Téléphone" class="icon">
+                        06 10 47 68 66
+                    </p>
+                </div>
+                <a href="../../Images/CV/CV.pdf" target="_blank" class="cv-button view">Decouvrir mon CV</a>
+            </div>
+
+
+
             <div class="contact-container">
-                <h2>Contactez-moi</h2>
+                
                 <form action="https://formspree.io/f/manwzbbq" method="post" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nom*</label>
@@ -57,13 +103,10 @@
                         <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
                     </div>
         
-                    <button type="submit">Envoyer</button>
+                    <button type="submit"> <p>Envoyer</p></button>
                 </form>
             </div>
 
-            <div class="cv-buttons">
-                <a href="../../Images/CV/CV.pdf" target="_blank" class="cv-button view">Decouvrir mon CV</a>
-            </div>
         </div>
         <!-- End Contact Form Section-->
 

@@ -1,14 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-*{ /* On initialize la page avec des valeurs par défaut*/
-    margin:0px; 
-    padding:0px;
+@font-face {
+    font-family: 'Balance';
+    src: url('../../Fonts/Balance.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --bg: #000000;
+    --clr-1: #00c2ff;
+    --clr-2: #33ff8c;
+    --clr-3: #ffc640;
+    --clr-4: #e54cff;
+
+    --blur: 1rem;
+    --fs: clamp(3rem, 8vw, 7rem);
+    --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+
+
+* {
+    /* On initialize la page avec des valeurs par défaut*/
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 
 
 /* ----------------------------------------------------------------------------------------  Header */
-.navbar{
+.navbar {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -21,9 +45,9 @@
 }
 
 
-.navbar::after{ 
+.navbar::after {
     position: absolute;
-    content:"";
+    content: "";
     bottom: 0;
     width: 78%;
     height: 2px;
@@ -33,31 +57,31 @@
 }
 
 .navbar img {
-    height: 10vh; 
-    vertical-align: middle; 
+    height: 10vh;
+    vertical-align: middle;
     margin-left: 1vh;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     align-items: center;
     height: 5vh;
     list-style-type: none;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     padding: 2vh;
     font-size: 2.3vh;
     text-decoration: none;
     color: #fff;
 }
 
-.navbar ul li a:hover{
-    border-radius: 5% ;
+.navbar ul li a:hover {
+    border-radius: 5%;
     background-color: #750f33;
 }
 
-h1 a{
+h1 a {
     margin-right: 58vh;
     font-size: 4vh;
     text-decoration: none;
@@ -74,34 +98,160 @@ h1 a{
 
 .contact-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    padding: 5vh;
+    min-height: 20vh;
+    padding: 2vh;
 }
 
-.contact-container {
+/* -- Contact Animation Title */
+.contact-header {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #2A1A3A; /* Fond violet très foncé */
+    align-items: center;
+}
+
+svg {
+    display: block;
+    font: 8em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #4D163D;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #63042b;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #dd991a;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+.underline {
+    position: absolute; 
+    left: 50%;
+    bottom: 10px; 
+    width: 100%; 
+    height: 3px; 
+    background-color: #750f33;
+    transform: translateX(-50%); 
+    animation: underline-animation 4.5s ease-in-out infinite; 
+}
+
+@keyframes underline-animation {
+    0% {
+        width: 0; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    50% {
+        width: 30%; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    100% {
+        width: 0; /* Rétrécit le trait */
+        left: 50%; /* Point de fin */
+        transform: translateX(-50%); /* Centre le trait */
+    }
+}
+
+/*  End Contact Animation Title */
+
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10vh; 
+    padding: 2vh;
+    margin: 10vh;
+}
+
+.informations-container,
+.contact-container {
+    background-color: #2A1A3A;
     padding: 2vh;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(82, 146, 63, 0.1);
-    max-width: 75vh;
-    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.295); 
+    min-height: 73vh; 
+    flex: 1; 
 }
 
-h2 {
-    font-size: 4vh;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #472942; /* Bordeaux pour le titre */
-    border-radius: 20px;
-    color: #dfdae0; /* Blanc cassé pour le texte du titre */
+
+.contact-info strong{
+    margin-left: 2vh;
+    color: #ffdff8; 
 }
 
+.contact-info img{
+    height: 6vh;
+    margin: 0 3vh 3vh 3vh;
+}
+
+/* Contenu des informations */
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p strong {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.contact-info p:before {
+    content: url('../../Images/Icons/location.png'); /* Icône pour la localisation */
+    margin-right: 10px;
+}
+
+.contact-info p:nth-child(2):before {
+    content: url('../../Images/Icons/email.png'); /* Icône pour l'email */
+    margin-right: 10px;
+}
+
+.contact-info p:nth-child(3):before {
+    content: url('../../Images/Icons/phone.png'); /* Icône pour le téléphone */
+    margin-right: 10px;
+}
+
+/* Formulaire de contact */
 .contact-form .form-group {
     margin-bottom: 30px;
 }
@@ -110,7 +260,7 @@ h2 {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #F2EEF3; /* Blanc cassé pour les labels */
+    color: #F2EEF3;
 }
 
 .contact-form input,
@@ -120,53 +270,58 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 16px;
-    background-color: #EDE9F0; /* Fond gris clair-violet */
-    color: #4A4A4A; /* Texte gris foncé */
+    background-color: #EDE9F0;
+    color: #4A4A4A;
     transition: border-color 0.5s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #8B1E42; /* Bordure bordeaux */
-    box-shadow: 0 0 10px rgba(139, 30, 66, 0.3); /* Effet focus accentué */
+    border-color: #8B1E42;
+    box-shadow: 0 0 10px rgba(139, 30, 66, 0.3);
     outline: none;
 }
 
 button {
     display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #8B1E42; /* Bordeaux profond */
+    margin: 6.5% auto 0 auto; /* Centrer horizontalement avec auto pour gauche et droite, marges en haut et bas ajustées */
+    width: 86%; /* Largeur du bouton */
+    padding: 15px;
+    background-color: #8B1E42;
     border: none;
     color: #fff;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.5s ease, transform 0.2s ease;
+    font-family: 'Balance', Arial, Helvetica, sans-serif; 
+    letter-spacing: 1.5px;
+}
+
+button p{
+    font-size: 4vh;
 }
 
 button:hover {
-    background: linear-gradient(90deg, #8B1E42, #AF335A); /* Gradient pour le bouton */
-    transform: scale(1.05); /* Zoom léger au survol */
+    background: linear-gradient(90deg, #8B1E42, #AF335A);
+    transform: scale(1.05);
 }
 
+
 /* ----------------------------------------------------------------------------------------  CV Section */
-.cv-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 4vh;
-}
 
 .cv-button {
     flex: 1;
     padding: 15px;
-    margin: 0 5vh;
+    margin: 8.5vh 10vh 0 10vh;
     border: none;
     border-radius: 8px;
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 4vh;
     transition: background-color 0.5s ease, transform 0.2s ease;
+    font-family: 'Balance', Arial, Helvetica, sans-serif; 
+    letter-spacing: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +363,8 @@ button:hover {
     top: 0;
     left: 0;
     background: #0b001a;
-    z-index: -1; /* Assure que le background soit bien à l'arrière-plan */
+    z-index: -1;
+    /* Assure que le background soit bien à l'arrière-plan */
     overflow: hidden;
 }
 
@@ -231,6 +387,7 @@ button:hover {
     transform-origin: -10vw -20vh;
     box-shadow: -56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(1) {
     color: #26114b;
     top: 41%;
@@ -240,6 +397,7 @@ button:hover {
     transform-origin: 5vw 24vh;
     box-shadow: 56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(2) {
     color: #26114b;
     top: 10%;
@@ -249,6 +407,7 @@ button:hover {
     transform-origin: 25vw -1vh;
     box-shadow: -56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(3) {
     color: #26114b;
     top: 35%;
@@ -258,6 +417,7 @@ button:hover {
     transform-origin: -3vw 13vh;
     box-shadow: -56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(4) {
     color: #760f2e;
     top: 43%;
@@ -267,6 +427,7 @@ button:hover {
     transform-origin: 5vw 15vh;
     box-shadow: 56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(5) {
     color: #760f2e;
     top: 24%;
@@ -276,6 +437,7 @@ button:hover {
     transform-origin: -18vw -20vh;
     box-shadow: 56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(6) {
     color: #760f2e;
     top: 51%;
@@ -285,6 +447,7 @@ button:hover {
     transform-origin: -10vw 6vh;
     box-shadow: -56vmin 0 8vmin currentColor;
 }
+
 .background span:nth-child(7) {
     color: #760f2e;
     top: 95%;
@@ -294,6 +457,7 @@ button:hover {
     transform-origin: 8vw -20vh;
     box-shadow: -56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(8) {
     color: #760f2e;
     top: 78%;
@@ -303,6 +467,7 @@ button:hover {
     transform-origin: -14vw 3vh;
     box-shadow: -56vmin 0 7vmin currentColor;
 }
+
 .background span:nth-child(9) {
     color: #26114b;
     top: 7%;
@@ -325,12 +490,12 @@ button:hover {
     position: relative;
     padding-bottom: 1%;
     text-align: center;
-    background-color:#0b001a;
+    background-color: #0b001a;
     color: #fff;
 }
 
 .footer-content::before {
-    content:"";
+    content: "";
     position: absolute;
     width: 70%;
     height: 2.5px;
@@ -363,26 +528,26 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    background-color: #2e1228; 
+    background-color: #2e1228;
 }
 
 .bloc-media ul li a img {
-    width: 30px; 
-    height: 30px; 
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .bloc-media ul li a:hover {
-    transform: scale(1.1); 
-    background-color: #750f33; 
+    transform: scale(1.1);
+    background-color: #750f33;
 }
 
 .bloc-media ul li a:hover img {
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .bloc-menu {
@@ -447,7 +612,7 @@ button:hover {
 @media (max-width: 768px) {
 
     .navbar {
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: auto;
@@ -468,7 +633,7 @@ button:hover {
         padding: 0;
         margin: 0;
         position: fixed;
-        top: 0; 
+        top: 0;
         left: 0;
         height: 100vh;
         background-color: rgba(26, 15, 43, 0.95);
@@ -496,11 +661,12 @@ button:hover {
         cursor: pointer;
         font-size: 4vh;
         color: #fff;
-        position: relative; 
+        position: relative;
         margin-right: 20px;
     }
+
     .bloc-media ul {
-        width: 50%; 
+        width: 50%;
     }
 
     .bloc-menu ul {
@@ -509,7 +675,7 @@ button:hover {
     }
 
     .bloc-menu ul li {
-        margin: 10px 0; 
+        margin: 10px 0;
     }
 
     .bloc-menu ul li a {
@@ -518,7 +684,7 @@ button:hover {
 
     .bloc-copyright {
         margin-top: 2vh;
-        font-size: 2vh; 
+        font-size: 2vh;
     }
 }
 
@@ -548,7 +714,7 @@ button:hover {
     }
 
     .menu-toggle {
-        margin-left: auto; 
+        margin-left: auto;
     }
 
     h1 a {
@@ -564,14 +730,14 @@ button:hover {
 
 
     .bloc-media ul {
-        width: 70%; 
+        width: 70%;
     }
 
     .bloc-menu ul li a {
-        font-size: 2vh; 
+        font-size: 2vh;
     }
 
     .bloc-menu ul li {
-        margin: 8px 0; 
+        margin: 8px 0;
     }
 }

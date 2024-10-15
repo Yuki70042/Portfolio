@@ -1,14 +1,17 @@
-
-
+/*
 // Ajoute un menu "Burger sur les petits formats"
 document.getElementById('menu-toggle').onclick = function() {
     var menu = document.getElementById('menu');
+    var body = document.body;
+    
     if (menu.classList.contains('active')) {
         menu.classList.remove('active');
+        body.classList.remove('menu-open'); // Réactive le défilement horizontal
     } else {
         menu.classList.add('active');
+        body.classList.add('menu-open'); // Bloque le défilement horizontal
     }
-};
+}; */
 
 
 
