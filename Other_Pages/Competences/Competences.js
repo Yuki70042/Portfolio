@@ -11,10 +11,26 @@ document.getElementById('menu-toggle').onclick = function() {
 };
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("year").textContent = new Date().getFullYear(); 
-    });
-    
+
+
+
+
+// Initialisation de Swiper
+const swiper = new Swiper('.swiper', {
+    loop: true, // Permet de faire défiler en boucle
+    autoplay: {
+        delay: 5000, // Défilement toutes les 5 secondes
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Les points sont cliquables
+    },
+});
+
+
+
+
+
     
 
 let angle = 0;
@@ -28,3 +44,10 @@ function rotateCarousel(direction) {
 function openPDF(file) {
     window.open(file, '_blank');
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("year").textContent = new Date().getFullYear(); 
+    });
+    

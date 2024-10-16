@@ -1,15 +1,9 @@
-
 @font-face {
     font-family: 'Balance';
     src: url('../../Fonts/Balance.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}
-
-
-
-
-
+} 
 *{ /* On initialize la page avec des valeurs par défaut*/
     margin:0px; 
     padding:0px;
@@ -94,7 +88,8 @@ h1 a{
 
 /* ----------------------------------------------------------------------------------------  End of Header */
 
-  .cover {
+
+.cover {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,76 +102,95 @@ h1 a{
     color: #fff;
     text-align: center;
     position: relative;
-    animation: lights 5s 750ms linear infinite;
-    font: 100% / 1.5 Balance, sans-serif;
 }
-  
+
 .cover h1 {
-    margin: auto;
-    padding: 2rem; 
-    font-size: 3.5rem;
-    font-weight: 300;
     font-size: 7rem; 
     align-items: flex-start;
+    padding: 2rem; 
     border-radius: 10px; 
-  }
-
-
-  
-@keyframes lights {
-    0% {
-      color: hsl(230, 40%, 80%);
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.2),
-        0 0 0.125em hsla(320, 100%, 60%, 0.3),
-        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-    }
-    
-    30% { 
-      color: hsl(230, 80%, 90%);
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 60%, 0.5),
-        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-    }
-    
-    40% { 
-      color: hsl(230, 100%, 95%);
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 90%, 0.5),
-        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-    }
-    
-    70% {
-      color: hsl(230, 80%, 90%);
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 60%, 0.5),
-        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-    }
-    
-    100% {
-      color: hsl(230, 40%, 80%);
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.2),
-        0 0 0.125em hsla(320, 100%, 60%, 0.3),
-        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-    }
-    
-  }
-
+}
 
 .balise{
     color: rgb(105, 18, 37);   
     font-size: 4vh;
+    
     padding-left: 3%;
 }
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials {
+    height: 500px; /* Déplacé depuis le HTML */
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.testimonials h3 {
+    color: #173b6c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.testimonials-slider {
+    margin-top: 30px;
+    height: 300px; /* Déplacé depuis le HTML */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-item h3 {
+    color: #173b6c;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.testimonial-item h4 {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Swiper pagination */
+.swiper-pagination-bullet {
+    background: #173b6c;
+}
+
+
 
 /* ----------------------------------------------------------------------------------------  Certifications part*/
 
