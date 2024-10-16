@@ -114,7 +114,6 @@ h1 a{
 .balise{
     color: rgb(105, 18, 37);   
     font-size: 4vh;
-    
     padding-left: 3%;
 }
 
@@ -135,7 +134,7 @@ h1 a{
     text-align: center;
     margin-top: 50px;
     padding: 30px;
-    background-color: #f9f9f9;
+    background-color: #0b001a83;
     border-radius: 10px;
 }
 
@@ -190,6 +189,12 @@ h1 a{
     background: #173b6c;
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Change le curseur en une main */
+}
 
 
 /* ----------------------------------------------------------------------------------------  Certifications part*/

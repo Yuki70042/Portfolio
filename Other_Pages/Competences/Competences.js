@@ -12,9 +12,6 @@ document.getElementById('menu-toggle').onclick = function() {
 
 
 
-
-
-
 // Initialisation de Swiper
 const swiper = new Swiper('.swiper', {
     loop: true, // Permet de faire défiler en boucle
@@ -28,11 +25,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-
-
-
     
-
 let angle = 0;
 
 function rotateCarousel(direction) {
