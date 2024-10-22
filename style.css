@@ -508,31 +508,25 @@ h1 a{
 .studies_certifications_box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 3%;
-    height: 100%;
-    color: #dfd3d3;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .studies_certifications_box h4{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 4vh; 
-    width: 100%; 
+    color: #dfd3d3;
+    font-size: 5vh;
 }
 
 
 .studies_box, .certification_box{
-    flex-direction: column;
-    padding: 3% 5% 3% 5%;
 }
 
 
 .studies_certifications_box img{
-    border-radius: 10%;
     height: 65%;
     width: auto;
+    border-radius: 15px;
 }
 
 
