@@ -508,8 +508,10 @@ h1 a{
 .studies_certifications_box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 5vh;
     width: 100%;
+    border: 2px solid red;
 }
 
 .studies_certifications_box h4{
@@ -520,12 +522,17 @@ h1 a{
 
 
 .studies_box, .certification_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border: 2px solid rgb(219, 202, 202);
 }
 
 
 .studies_certifications_box img{
-    height: 65%;
-    width: auto;
+    height: 90%;
+    width: 100%;
     border-radius: 15px;
 }
 
