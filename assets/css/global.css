@@ -70,7 +70,7 @@ body{
 .navbar img {
     height: 10vh; 
     vertical-align: middle; 
-    margin-left: 1vh;
+    margin-left: 5vh;
 }
 
 
@@ -95,7 +95,7 @@ body{
 
 
 h1 a{
-    margin-right: 58vh;
+    margin-right: 85vh;
     font-size: 4vh;
     text-decoration: none;
     color: #fff;
@@ -154,7 +154,7 @@ footer::before {
     justify-content: space-around;
     list-style-type: none;
     padding: 0;
-    width: 30%;
+    width: 25%;
 }
 
 .bloc-media ul li {
