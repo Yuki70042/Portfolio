@@ -51,7 +51,8 @@ body{
     height: 14vh;
     padding: 20px;
     color: #fff;
-    background-color: #0b001a; /* Marque la section de la navbar */
+    /* Marque la section de la navbar */
+    background-color: #0b001a; 
 }
 
     /* Ajout d'un trait colore apres la navbar */
