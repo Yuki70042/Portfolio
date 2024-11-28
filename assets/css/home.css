@@ -417,7 +417,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 35vh;
+    margin-bottom: 15vh;
 }
 
 .Experience-one, .Experience-two{
@@ -462,22 +462,104 @@
 }
 
 
-.Background {
+.Background-experience {
     position: relative; 
   }
   
-  .Background::before {
+  .Background-experience::before {
     content: "";
     position: absolute;
     top: 100px;
     left: -20%;
     width: 200%; 
     height: 80vh; 
-    background-color: #9b384c; 
+    background-color: #993046; 
     transform: rotate(15deg);
     transform-origin: center;
     z-index: -1;
   }
+
+
+
+
+
+.Redirection-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Redirection-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.Redirection-menu button{
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 0 6vh 33vh;
+    width: 40%;
+    height: 14vh;
+    border-radius: 25px;
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+
+}
+
+.Redirection-menu img{
+    margin-right: 20vh;
+    width: 20%;
+}
+
+
+.Redirection-documents{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#button1{
+    background-color: #b78894;
+    color: #2e2238;
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+}
+
+
+#button2{
+    background-color: #a55e70;
+    color: #2e2238;
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+}
+
+
+#button3{
+    background-color: #903446;
+    color: #e4dbda; 
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+}
+
+
+#button4{
+    background-color: #671728;
+    color: #e4dbda;
+    font-family: 'Balance', Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+}
+
+
+
+
+
+
+
 
 
 /* ------------ Format Tablette  -------------- */
