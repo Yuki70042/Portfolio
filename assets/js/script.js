@@ -1,3 +1,5 @@
+
+console.log("Script bien charge et execute");
 /*
 // Ajoute un menu "Burger sur les petits formats"
 document.getElementById('menu-toggle').onclick = function() {
